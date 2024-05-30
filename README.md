@@ -1,0 +1,2 @@
+# Rustonia
+Learn rust
