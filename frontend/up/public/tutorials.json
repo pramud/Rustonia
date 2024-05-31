@@ -1,0 +1,1970 @@
+[
+    {
+      "id": 1,
+      "title": "Welcome to Rustonia",
+      "description": "Ryle arrives in Rustonia, a magical land. He finds an ancient book that will guide him through learning the language of Rust.",
+      "narrative": "Ryle steps into Rustonia and discovers a mysterious book that will help him learn the powerful language of Rust.",
+      "isCompleted": false,
+      "requiresCode": false
+    },
+    {
+      "id": 2,
+      "title": "Introduction to Rust",
+      "description": "Welcome to the world of Rust programming! Rust is known for its safety and performance. Let's start with a simple 'Hello, Rustonia!' program.",
+      "narrative": "The book reveals that Rust is a magical language known for its safety and performance. Ryle is eager to learn his first spell.",
+      "initialCode": "fn main() {\n    println!(\"Hello, Rustonia!\");\n}",
+      "expectedOutput": "Hello, Rustonia!",
+      "isCompleted": false,
+      "requiresCode": true,
+      "hints": [
+        "The `fn` keyword is used to define a function.",
+        "`main` is the entry point of every Rust program.",
+        "`println!` is a macro that prints text to the console."
+      ],
+      "explanations": {
+        "fn main()": "Defines the main function where the program execution starts.",
+        "println!(\"Hello, Rustonia!\")": "Calls the `println!` macro to print the text to the console."
+      },
+      "achievements": [
+        {
+          "id": 1,
+          "title": "First Spell",
+          "description": "Successfully write and run your first Rust program.",
+          "reward": "Unlock a special badge"
+        }
+      ],
+      "feedback": {
+        "success": "Great job! You've written your first Rust program.",
+        "failure": "Check your syntax and try again. Remember to use the correct format."
+      }
+    },
+    {
+      "id": 3,
+      "title": "Exercise 1: Modify the Message",
+      "description": "Change the message to 'Hello, Rustaceans!'",
+      "initialCode": "fn main() {\n    println!(\"Hello, Rustonia!\");\n}",
+      "expectedOutput": "Hello, Rustaceans!",
+      "isCompleted": false,
+      "requiresCode": true,
+      "hints": [
+        "Look for the text inside the `println!` macro.",
+        "Replace 'Hello, Rustonia!' with 'Hello, Rustaceans!'"
+      ],
+      "feedback": {
+        "success": "Perfect! You've successfully changed the message.",
+        "failure": "Make sure you've correctly changed the text inside the `println!` macro."
+      }
+    },
+    {
+      "id": 4,
+      "title": "Exercise 2: Add Another Print Statement",
+      "description": "Add a second print statement to display 'Welcome to Rust!'",
+      "initialCode": "fn main() {\n    println!(\"Hello, Rustonia!\");\n}",
+      "expectedOutput": "Hello, Rustonia!\nWelcome to Rust!",
+      "isCompleted": false,
+      "requiresCode": true,
+      "hints": [
+        "Use another `println!` macro after the first one.",
+        "Ensure you have correct syntax and spacing."
+      ],
+      "feedback": {
+        "success": "Great job! You've added another print statement.",
+        "failure": "Check your syntax and ensure the new `println!` is correctly placed."
+      }
+    },
+    {
+      "id": 5,
+      "title": "Understanding the Basics",
+      "description": "Let's break down the 'Hello, Rustonia!' program and understand its components.",
+      "narrative": "The book explains the structure of the spell Ryle just wrote, breaking down each part of the program.",
+      "isCompleted": false,
+      "requiresCode": false,
+      "explanations": {
+        "fn main()": "Defines the main function where the program execution starts.",
+        "println!(\"Hello, Rustonia!\")": "Calls the `println!` macro to print the text to the console."
+      }
+    },
+    {
+      "id": 6,
+      "title": "The Magic of Variables",
+      "description": "Learn to use variables to store values and discover different data types.",
+      "narrative": "Ryle learns that variables are like containers for storing magic energy (data). He discovers how to declare variables and perform basic operations.",
+      "initialCode": "fn main() {\n    let x = 5;\n    println!(\"The value of x is: {}\", x);\n}",
+      "expectedOutput": "The value of x is: 5",
+      "isCompleted": false,
+      "requiresCode": true,
+      "hints": [
+        "Use the `let` keyword to declare a variable.",
+        "You can use `{}` to include variable values in the `println!` macro."
+      ],
+      "explanations": {
+        "let x = 5;": "Declares a variable `x` and initializes it with the value 5.",
+        "println!(\"The value of x is: {}\", x);": "Prints the value of `x` using the `println!` macro."
+      }
+    },
+    {
+      "id": 7,
+      "title": "Exercise 3: Declare Another Variable",
+      "description": "Declare a new variable `y` and set its value to 10. Print 'The value of y is: 10'.",
+      "initialCode": "fn main() {\n    let x = 5;\n    println!(\"The value of x is: {}\", x);\n}",
+      "expectedOutput": "The value of x is: 5\nThe value of y is: 10",
+      "isCompleted": false,
+      "requiresCode": true,
+      "hints": [
+        "Use the `let` keyword to declare a new variable `y`.",
+        "Add another `println!` statement to print the value of `y`."
+      ],
+      "feedback": {
+        "success": "Well done! You've successfully declared a new variable and printed its value.",
+        "failure": "Ensure you've declared the variable `y` correctly and added the print statement."
+      }
+    },
+    {
+      "id": 8,
+      "title": "Understanding Types",
+      "description": "Learn about different data types in Rust and how to use them.",
+      "narrative": "Ryle discovers that Rust has different types of magic (data types) and learns how to use them.",
+      "initialCode": "fn main() {\n    let integer: i32 = 10;\n    let float: f64 = 3.14;\n    let boolean: bool = true;\n    let character: char = 'R';\n    println!(\"integer: {}, float: {}, boolean: {}, character: {}\", integer, float, boolean, character);\n}",
+      "expectedOutput": "integer: 10, float: 3.14, boolean: true, character: R",
+      "isCompleted": false,
+      "requiresCode": true,
+      "hints": [
+        "Specify the type of a variable using a colon `:`.",
+        "Common types include `i32`, `f64`, `bool`, and `char`."
+      ],
+      "explanations": {
+        "let integer: i32 = 10;": "Declares an integer variable with a type of `i32` and a value of 10.",
+        "let float: f64 = 3.14;": "Declares a floating-point variable with a type of `f64` and a value of 3.14.",
+        "let boolean: bool = true;": "Declares a boolean variable with a type of `bool` and a value of true.",
+        "let character: char = 'R';": "Declares a character variable with a type of `char` and a value of 'R'.",
+        "println!(\"integer: {}, float: {}, boolean: {}, character: {}\", integer, float, boolean, character);": "Prints the values of the variables."
+      }
+    },
+    {
+      "id": 9,
+      "title": "Casting Spells with Functions",
+      "description": "Learn to create and call functions, passing arguments and returning values.",
+      "narrative": "Ryle learns that spells (functions) can be reused and customized. He discovers how to create and call functions.",
+      "initialCode": "fn main() {\n    greet();\n}\n\nfn greet() {\n    println!(\"Hello, from the greet function!\");\n}",
+      "expectedOutput": "Hello, from the greet function!",
+      "isCompleted": false,
+      "requiresCode": true,
+      "hints": [
+        "Define functions using the `fn` keyword.",
+        "Call the function by its name followed by parentheses."
+      ],
+      "explanations": {
+        "fn greet()": "Defines a function named `greet`.",
+        "greet();": "Calls the `greet` function."
+      }
+    },
+    {
+      "id": 10,
+      "title": "Understanding Parameters and Return Types",
+      "description": "Learn how to pass parameters to functions and specify return types.",
+      "narrative": "Ryle learns that functions can take parameters and return values, making them more versatile.",
+      "initialCode": "fn main() {\n    let result = add(5, 3);\n    println!(\"The result is: {}\", result);\n}\n\nfn add(a: i32, b: i32) -> i32 {\n    a + b\n}",
+      "expectedOutput": "The result is: 8",
+      "isCompleted": false,
+      "requiresCode": true,
+      "hints": [
+        "Define parameters in the function signature.",
+        "Specify the return type after the arrow `->`."
+      ],
+      "explanations": {
+        "fn add(a: i32, b: i32) -> i32": "Defines a function named `add` that takes two `i32` parameters and returns an `i32`.",
+        "a + b": "The function returns the sum of `a` and `b`."
+      }
+    },
+    {
+      "id": 11,
+      "title": "Exercise 4: Add a Parameter to the Function",
+      "description": "Modify the `greet` function to take a `name` parameter and print 'Hello, [name]!'",
+      "initialCode": "fn main() {\n    greet(\"Ryle\");\n}\n\nfn greet(name: &str) {\n    println!(\"Hello, from the greet function!\");\n}",
+      "expectedOutput": "Hello, Ryle!",
+      "isCompleted": false,
+      "requiresCode": true,
+      "hints": [
+        "Add a parameter to the `greet` function definition.",
+        "Use the parameter inside the `println!` macro."
+      ],
+      "feedback": {
+        "success": "Excellent! You've successfully added a parameter to the function and used it.",
+        "failure": "Ensure you've added the parameter correctly and used it in the `println!` macro."
+      }
+    },
+
+    {
+        "id": 12,
+        "title": "The Rules of Ownership",
+        "description": "Ryle learns that in Rustonia, every object belongs to someone and must follow the rules of ownership.",
+        "narrative": "Ryle discovers that in Rustonia, objects (variables) have owners, and there are strict rules governing how they can be used.",
+        "isCompleted": false,
+        "requiresCode": false
+      },
+      {
+        "id": 13,
+        "title": "Understanding Ownership",
+        "description": "Learn about Rust's ownership system and how it helps manage memory safely.",
+        "narrative": "The ancient book explains the concept of ownership in Rust, emphasizing the importance of managing memory safely.",
+        "initialCode": "fn main() {\n    let s1 = String::from(\"Hello\");\n    let s2 = s1;\n    println!(\"{}\", s1); // This will cause an error\n}",
+        "expectedOutput": "Error: borrow of moved value: `s1`",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "In Rust, when you assign `s1` to `s2`, `s1` is moved and can no longer be used.",
+          "Try using `&s1` to borrow the value instead of moving it."
+        ],
+        "explanations": {
+          "let s1 = String::from(\"Hello\");": "Creates a new `String` object.",
+          "let s2 = s1;": "Moves the ownership of the `String` from `s1` to `s2`.",
+          "println!(\"{}\", s1);": "This line will cause an error because `s1` has been moved."
+        }
+      },
+      {
+        "id": 14,
+        "title": "Exercise 1: Borrowing with References",
+        "description": "Modify the code to borrow the value of `s1` using a reference instead of moving it.",
+        "initialCode": "fn main() {\n    let s1 = String::from(\"Hello\");\n    let s2 = &s1;\n    println!(\"{}\", s1);\n    println!(\"{}\", s2);\n}",
+        "expectedOutput": "Hello\nHello",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Use `&s1` to borrow the value of `s1`.",
+          "References allow you to access the value without taking ownership."
+        ],
+        "feedback": {
+          "success": "Great! You've successfully borrowed the value using a reference.",
+          "failure": "Ensure you're using `&s1` to create a reference instead of moving the value."
+        }
+      },
+      {
+        "id": 15,
+        "title": "Mutable References",
+        "description": "Learn about mutable references and how they allow you to modify borrowed values.",
+        "narrative": "Ryle discovers that some objects can be borrowed mutably, allowing changes to the original value.",
+        "initialCode": "fn main() {\n    let mut s1 = String::from(\"Hello\");\n    let s2 = &mut s1;\n    s2.push_str(\", world!\");\n    println!(\"{}\", s2);\n}",
+        "expectedOutput": "Hello, world!",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Use `mut` to declare a mutable variable.",
+          "Use `&mut` to create a mutable reference."
+        ],
+        "explanations": {
+          "let mut s1 = String::from(\"Hello\");": "Creates a mutable `String` object.",
+          "let s2 = &mut s1;": "Creates a mutable reference to `s1`.",
+          "s2.push_str(\", world!\");": "Modifies the original `String` through the mutable reference."
+        }
+      },
+      {
+        "id": 16,
+        "title": "Exercise 2: Mutable References",
+        "description": "Create a mutable reference and modify the borrowed value.",
+        "initialCode": "fn main() {\n    let mut s1 = String::from(\"Hello\");\n    let s2 = &mut s1;\n    s2.push_str(\" there!\");\n    println!(\"{}\", s2);\n}",
+        "expectedOutput": "Hello there!",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Ensure `s1` is mutable using `mut`.",
+          "Use `&mut` to borrow `s1` mutably and modify it."
+        ],
+        "feedback": {
+          "success": "Well done! You've successfully used a mutable reference to modify the value.",
+          "failure": "Ensure you've declared `s1` as mutable and used a mutable reference correctly."
+        }
+      },
+      {
+        "id": 17,
+        "title": "The Concept of Lifetimes",
+        "description": "Understand how Rust uses lifetimes to ensure references are valid.",
+        "narrative": "Ryle learns that every borrowed value in Rustonia has a lifetime, ensuring references are always valid.",
+        "initialCode": "fn main() {\n    let r;\n    {\n        let x = 5;\n        r = &x;\n    }\n    println!(\"{}\", r); // This will cause an error\n}",
+        "expectedOutput": "Error: `x` does not live long enough",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "The variable `x` does not live long enough for `r` to reference it.",
+          "Lifetimes ensure that references are valid for the duration they are used."
+        ],
+        "explanations": {
+          "let r;": "Declares a reference `r`.",
+          "let x = 5;": "Creates a variable `x` inside a block.",
+          "r = &x;": "Attempts to create a reference to `x`.",
+          "println!(\"{}\", r);": "This line will cause an error because `x` does not live long enough."
+        }
+      },
+      {
+        "id": 18,
+        "title": "Exercise 3: Fixing Lifetime Issues",
+        "description": "Modify the code to ensure the reference is valid by adjusting the lifetimes.",
+        "initialCode": "fn main() {\n    let x = 5;\n    let r = &x;\n    println!(\"{}\", r);\n}",
+        "expectedOutput": "5",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Ensure that the referenced value lives long enough.",
+          "Move the declaration of `x` outside of the block."
+        ],
+        "feedback": {
+          "success": "Great job! You've correctly managed the lifetimes of the references.",
+          "failure": "Ensure the variable being referenced lives long enough for the reference to be valid."
+        }
+      },
+      {
+        "id": 19,
+        "title": "Exploring Structs",
+        "description": "Ryle learns to describe objects with various attributes using structs.",
+        "narrative": "In the Enchanted Forest, Ryle encounters mystical creatures and learns to describe them using structs.",
+        "initialCode": "struct Creature {\n    name: String,\n    level: u32,\n}\n\nfn main() {\n    let creature = Creature {\n        name: String::from(\"Goblin\"),\n        level: 3,\n    };\n    println!(\"{} is at level {}\", creature.name, creature.level);\n}",
+        "expectedOutput": "Goblin is at level 3",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Define a struct using the `struct` keyword.",
+          "Create an instance of the struct by specifying values for its fields."
+        ],
+        "explanations": {
+          "struct Creature": "Defines a struct named `Creature`.",
+          "name: String, level: u32": "Defines fields for the struct with their respective types.",
+          "let creature = Creature": "Creates an instance of the `Creature` struct.",
+          "println!(\"{} is at level {}\", creature.name, creature.level)": "Prints the values of the struct's fields."
+        }
+      },
+      {
+        "id": 20,
+        "title": "Exercise 1: Add More Fields",
+        "description": "Add a new field `strength` to the `Creature` struct and print its value.",
+        "initialCode": "struct Creature {\n    name: String,\n    level: u32,\n}\n\nfn main() {\n    let creature = Creature {\n        name: String::from(\"Goblin\"),\n        level: 3,\n    };\n    println!(\"{} is at level {}\", creature.name, creature.level);\n}",
+        "expectedOutput": "Goblin is at level 3 with strength 5",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Add a new field `strength` to the `Creature` struct.",
+          "Initialize the `strength` field when creating an instance of `Creature`.",
+          "Print the value of the `strength` field."
+        ],
+        "feedback": {
+          "success": "Excellent! You've added a new field to the struct and printed its value.",
+          "failure": "Ensure you've added the `strength` field and initialized it correctly."
+        }
+      },
+      {
+        "id": 21,
+        "title": "Understanding Enums",
+        "description": "Learn to define and use enums to represent different forms.",
+        "narrative": "Ryle meets creatures that can take various forms. He learns to describe these forms using enums.",
+        "initialCode": "enum CreatureType {\n    Goblin,\n    Orc,\n    Elf,\n}\n\nfn main() {\n    let creature = CreatureType::Goblin;\n    match creature {\n        CreatureType::Goblin => println!(\"A Goblin appears!\"),\n        CreatureType::Orc => println!(\"An Orc appears!\"),\n        CreatureType::Elf => println!(\"An Elf appears!\"),\n    }\n}",
+        "expectedOutput": "A Goblin appears!",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Define an enum using the `enum` keyword.",
+          "Use a `match` statement to handle different enum variants."
+        ],
+        "explanations": {
+          "enum CreatureType": "Defines an enum named `CreatureType`.",
+          "CreatureType::Goblin": "Creates an instance of the `Goblin` variant.",
+          "match creature": "Uses a `match` statement to handle different variants of the enum."
+        }
+      },
+      {
+        "id": 22,
+        "title": "Exercise 2: Add More Variants",
+        "description": "Add a new variant `Troll` to the `CreatureType` enum and handle it in the `match` statement.",
+        "initialCode": "enum CreatureType {\n    Goblin,\n    Orc,\n    Elf,\n}\n\nfn main() {\n    let creature = CreatureType::Goblin;\n    match creature {\n        CreatureType::Goblin => println!(\"A Goblin appears!\"),\n        CreatureType::Orc => println!(\"An Orc appears!\"),\n        CreatureType::Elf => println!(\"An Elf appears!\"),\n    }\n}",
+        "expectedOutput": "A Troll appears!",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Add a new variant `Troll` to the `CreatureType` enum.",
+          "Handle the `Troll` variant in the `match` statement."
+        ],
+        "feedback": {
+          "success": "Great! You've added a new variant to the enum and handled it in the `match` statement.",
+          "failure": "Ensure you've added the `Troll` variant and included it in the `match` statement."
+        }
+      },
+      {
+        "id": 23,
+        "title": "Combining Structs and Enums",
+        "description": "Learn to combine structs and enums to create complex data structures.",
+        "narrative": "Ryle learns to combine the power of structs and enums to describe complex creatures with different types and attributes.",
+        "initialCode": "struct Creature {\n    name: String,\n    level: u32,\n    creature_type: CreatureType,\n}\n\nenum CreatureType {\n    Goblin,\n    Orc,\n    Elf,\n}\n\nfn main() {\n    let creature = Creature {\n        name: String::from(\"Goblin\"),\n        level: 3,\n        creature_type: CreatureType::Goblin,\n    };\n    match creature.creature_type {\n        CreatureType::Goblin => println!(\"{} the Goblin is at level {}\", creature.name, creature.level),\n        CreatureType::Orc => println!(\"{} the Orc is at level {}\", creature.name, creature.level),\n        CreatureType::Elf => println!(\"{} the Elf is at level {}\", creature.name, creature.level),\n    }\n}",
+        "expectedOutput": "Goblin the Goblin is at level 3",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Include the `CreatureType` enum as a field in the `Creature` struct.",
+          "Use a `match` statement to handle different creature types."
+        ],
+        "explanations": {
+          "creature_type: CreatureType": "Defines a field in the `Creature` struct using the `CreatureType` enum.",
+          "match creature.creature_type": "Matches the `creature_type` field to print specific messages."
+        }
+      },
+      {
+        "id": 24,
+        "title": "Exercise 3: Adding Another Struct",
+        "description": "Create a new struct `Weapon` and include it as a field in the `Creature` struct.",
+        "initialCode": "struct Creature {\n    name: String,\n    level: u32,\n    creature_type: CreatureType,\n}\n\nenum CreatureType {\n    Goblin,\n    Orc,\n    Elf,\n}\n\nfn main() {\n    let creature = Creature {\n        name: String::from(\"Goblin\"),\n        level: 3,\n        creature_type: CreatureType::Goblin,\n    };\n    match creature.creature_type {\n        CreatureType::Goblin => println!(\"{} the Goblin is at level {}\", creature.name, creature.level),\n        CreatureType::Orc => println!(\"{} the Orc is at level {}\", creature.name, creature.level),\n        CreatureType::Elf => println!(\"{} the Elf is at level {}\", creature.name, creature.level),\n    }\n}",
+        "expectedOutput": "Goblin the Goblin wields a Sword",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Define a new struct `Weapon` with fields such as `name`.",
+          "Include the `Weapon` struct as a field in the `Creature` struct.",
+          "Print the weapon's name in the `match` statement."
+        ],
+        "feedback": {
+          "success": "Well done! You've created a new struct and included it in the `Creature` struct.",
+          "failure": "Ensure you've defined the `Weapon` struct and included it correctly in the `Creature` struct."
+        }
+      },
+      {
+        "id": 25,
+        "title": "Pattern Matching",
+        "description": "Learn to use pattern matching with enums and structs.",
+        "narrative": "Ryle masters the art of pattern matching, a powerful technique to handle complex data structures effectively.",
+        "initialCode": "struct Creature {\n    name: String,\n    level: u32,\n    creature_type: CreatureType,\n}\n\nenum CreatureType {\n    Goblin,\n    Orc,\n    Elf,\n}\n\nfn main() {\n    let creature = Creature {\n        name: String::from(\"Goblin\"),\n        level: 3,\n        creature_type: CreatureType::Goblin,\n    };\n    match creature {\n        Creature { name, level, creature_type: CreatureType::Goblin } => println!(\"{} the Goblin is at level {}\", name, level),\n        Creature { name, level, creature_type: CreatureType::Orc } => println!(\"{} the Orc is at level {}\", name, level),\n        Creature { name, level, creature_type: CreatureType::Elf } => println!(\"{} the Elf is at level {}\", name, level),\n    }\n}",
+        "expectedOutput": "Goblin the Goblin is at level 3",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Use pattern matching to destructure the `Creature` struct.",
+          "Match specific variants of the `CreatureType` enum."
+        ],
+        "explanations": {
+          "match creature": "Uses pattern matching to destructure the `Creature` struct and handle different `CreatureType` variants."
+        }
+      },
+      {
+        "id": 26,
+        "title": "Exercise 4: Advanced Pattern Matching",
+        "description": "Practice advanced pattern matching by adding new fields and matching on them.",
+        "initialCode": "struct Creature {\n    name: String,\n    level: u32,\n    creature_type: CreatureType,\n}\n\nenum CreatureType {\n    Goblin,\n    Orc,\n    Elf,\n}\n\nfn main() {\n    let creature = Creature {\n        name: String::from(\"Goblin\"),\n        level: 3,\n        creature_type: CreatureType::Goblin,\n    };\n    match creature {\n        Creature { name, level, creature_type: CreatureType::Goblin } => println!(\"{} the Goblin is at level {}\", name, level),\n        Creature { name, level, creature_type: CreatureType::Orc } => println!(\"{} the Orc is at level {}\", name, level),\n        Creature { name, level, creature_type: CreatureType::Elf } => println!(\"{} the Elf is at level {}\", name, level),\n    }\n}",
+        "expectedOutput": "Goblin the Goblin wields a Sword",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Add new fields to the `Creature` struct and include them in the pattern matching.",
+          "Print the new fields in the `match` statement."
+        ],
+        "feedback": {
+          "success": "Excellent! You've mastered advanced pattern matching with structs and enums.",
+          "failure": "Ensure you've added the new fields and included them in the pattern matching correctly."
+        }
+      },
+      {
+        "id": 27,
+        "title": "Introduction to Concurrency",
+        "description": "Ryle arrives in Concurrentia, where multiple tasks happen simultaneously. He learns the basics of concurrency.",
+        "narrative": "In the bustling city of Concurrentia, Ryle must complete multiple tasks at once. He learns the basics of concurrency and its importance.",
+        "isCompleted": false,
+        "requiresCode": false
+      },
+      {
+        "id": 28,
+        "title": "Using Threads",
+        "description": "Learn how to create and use threads to perform tasks concurrently.",
+        "narrative": "Ryle discovers the power of threads to handle multiple tasks at the same time.",
+        "initialCode": "use std::thread;\n\nfn main() {\n    let handle = thread::spawn(|| {\n        for i in 1..10 {\n            println!(\"hi number {} from the spawned thread!\", i);\n        }\n    });\n\n    for i in 1..5 {\n        println!(\"hi number {} from the main thread!\", i);\n    }\n\n    handle.join().unwrap();\n}",
+        "expectedOutput": "hi number 1 from the main thread!\nhi number 2 from the main thread!\nhi number 3 from the main thread!\nhi number 4 from the main thread!\nhi number 1 from the spawned thread!\n...",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Use `thread::spawn` to create a new thread.",
+          "Use `handle.join()` to wait for the spawned thread to finish."
+        ],
+        "explanations": {
+          "thread::spawn": "Creates a new thread and runs the code inside the closure.",
+          "handle.join()": "Waits for the spawned thread to finish execution."
+        }
+      },
+      {
+        "id": 29,
+        "title": "Exercise 1: Multiple Threads",
+        "description": "Create multiple threads to perform different tasks concurrently.",
+        "initialCode": "use std::thread;\n\nfn main() {\n    let handle1 = thread::spawn(|| {\n        for i in 1..5 {\n            println!(\"Thread 1: {}\", i);\n        }\n    });\n\n    let handle2 = thread::spawn(|| {\n        for i in 1..5 {\n            println!(\"Thread 2: {}\", i);\n        }\n    });\n\n    handle1.join().unwrap();\n    handle2.join().unwrap();\n}",
+        "expectedOutput": "Thread 1: 1\nThread 1: 2\nThread 1: 3\nThread 1: 4\nThread 2: 1\nThread 2: 2\nThread 2: 3\nThread 2: 4",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Create multiple threads using `thread::spawn`.",
+          "Use `handle.join()` for each thread to wait for their completion."
+        ],
+        "feedback": {
+          "success": "Great! You've successfully created multiple threads to perform tasks concurrently.",
+          "failure": "Ensure you've created and joined multiple threads correctly."
+        }
+      },
+      {
+        "id": 30,
+        "title": "Introduction to Async Programming",
+        "description": "Learn the basics of asynchronous programming to handle tasks without blocking.",
+        "narrative": "Ryle learns the magic of async programming to handle multiple tasks efficiently without blocking.",
+        "initialCode": "use tokio::time::{sleep, Duration};\n\n#[tokio::main]\nasync fn main() {\n    let handle = tokio::spawn(async {\n        for i in 1..10 {\n            println!(\"hi number {} from the spawned async task!\", i);\n            sleep(Duration::from_millis(100)).await;\n        }\n    });\n\n    for i in 1..5 {\n        println!(\"hi number {} from the main async task!\", i);\n        sleep(Duration::from_millis(100)).await;\n    }\n\n    handle.await.unwrap();\n}",
+        "expectedOutput": "hi number 1 from the main async task!\nhi number 2 from the main async task!\nhi number 3 from the main async task!\nhi number 4 from the main async task!\nhi number 1 from the spawned async task!\n...",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Use `tokio::spawn` to create an async task.",
+          "Use `.await` to wait for the async task to complete."
+        ],
+        "explanations": {
+          "tokio::spawn": "Creates a new async task and runs the code inside the async block.",
+          "sleep(Duration::from_millis(100)).await": "Pauses execution for a specified duration without blocking."
+        }
+      },
+      {
+        "id": 31,
+        "title": "Exercise 2: Multiple Async Tasks",
+        "description": "Create multiple async tasks to perform different operations concurrently.",
+        "initialCode": "use tokio::time::{sleep, Duration};\n\n#[tokio::main]\nasync fn main() {\n    let handle1 = tokio::spawn(async {\n        for i in 1..5 {\n            println!(\"Async Task 1: {}\", i);\n            sleep(Duration::from_millis(100)).await;\n        }\n    });\n\n    let handle2 = tokio::spawn(async {\n        for i in 1..5 {\n            println!(\"Async Task 2: {}\", i);\n            sleep(Duration::from_millis(100)).await;\n        }\n    });\n\n    handle1.await.unwrap();\n    handle2.await.unwrap();\n}",
+        "expectedOutput": "Async Task 1: 1\nAsync Task 1: 2\nAsync Task 1: 3\nAsync Task 1: 4\nAsync Task 2: 1\nAsync Task 2: 2\nAsync Task 2: 3\nAsync Task 2: 4",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Create multiple async tasks using `tokio::spawn`.",
+          "Use `.await` for each async task to wait for their completion."
+        ],
+        "feedback": {
+          "success": "Excellent! You've successfully created multiple async tasks to perform operations concurrently.",
+          "failure": "Ensure you've created and awaited multiple async tasks correctly."
+        }
+      },
+      {
+        "id": 32,
+        "title": "Combining Threads and Async",
+        "description": "Learn how to combine threads and async programming to handle complex tasks.",
+        "narrative": "Ryle masters the art of combining threads and async programming to tackle complex tasks efficiently.",
+        "initialCode": "use std::thread;\nuse tokio::time::{sleep, Duration};\n\n#[tokio::main]\nasync fn main() {\n    let handle1 = thread::spawn(|| {\n        for i in 1..5 {\n            println!(\"Thread 1: {}\", i);\n        }\n    });\n\n    let handle2 = tokio::spawn(async {\n        for i in 1..5 {\n            println!(\"Async Task: {}\", i);\n            sleep(Duration::from_millis(100)).await;\n        }\n    });\n\n    handle1.join().unwrap();\n    handle2.await.unwrap();\n}",
+        "expectedOutput": "Thread 1: 1\nThread 1: 2\nThread 1: 3\nThread 1: 4\nAsync Task: 1\nAsync Task: 2\nAsync Task: 3\nAsync Task: 4",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Use `thread::spawn` to create a thread.",
+          "Use `tokio::spawn` to create an async task.",
+          "Use `handle.join()` for threads and `.await` for async tasks to wait for their completion."
+        ],
+        "explanations": {
+          "thread::spawn": "Creates a new thread to run concurrent tasks.",
+          "tokio::spawn": "Creates a new async task to run tasks without blocking.",
+          "handle1.join()": "Waits for the thread to finish execution.",
+          "handle2.await": "Waits for the async task to complete."
+        }
+      },
+      {
+        "id": 33,
+        "title": "Exercise 3: Combining Multiple Threads and Async Tasks",
+        "description": "Practice combining multiple threads and async tasks to handle different operations.",
+        "initialCode": "use std::thread;\nuse tokio::time::{sleep, Duration};\n\n#[tokio::main]\nasync fn main() {\n    let handle1 = thread::spawn(|| {\n        for i in 1..5 {\n            println!(\"Thread 1: {}\", i);\n        }\n    });\n\n    let handle2 = tokio::spawn(async {\n        for i in 1..5 {\n            println!(\"Async Task 1: {}\", i);\n            sleep(Duration::from_millis(100)).await;\n        }\n    });\n\n    let handle3 = tokio::spawn(async {\n        for i in 1..5 {\n            println!(\"Async Task 2: {}\", i);\n            sleep(Duration::from_millis(100)).await;\n        }\n    });\n\n    handle1.join().unwrap();\n    handle2.await.unwrap();\n    handle3.await.unwrap();\n}",
+        "expectedOutput": "Thread 1: 1\nThread 1: 2\nThread 1: 3\nThread 1: 4\nAsync Task 1: 1\nAsync Task 1: 2\nAsync Task 1: 3\nAsync Task 1: 4\nAsync Task 2: 1\nAsync Task 2: 2\nAsync Task 2: 3\nAsync Task 2: 4",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Create multiple threads using `thread::spawn`.",
+          "Create multiple async tasks using `tokio::spawn`.",
+          "Wait for the completion of all threads and async tasks using `handle.join()` and `.await` respectively."
+        ],
+        "feedback": {
+          "success": "Fantastic! You've successfully combined multiple threads and async tasks.",
+          "failure": "Ensure you've created and awaited multiple threads and async tasks correctly."
+        }
+      },
+      
+  {
+    "id": 34,
+    "title": "Introduction to Closures",
+    "description": "Ryle arrives at the Functional Fortress and learns about closures.",
+    "narrative": "Ryle discovers the power of closures, which allow him to capture the surrounding environment and create powerful, flexible functions.",
+    "isCompleted": false,
+    "requiresCode": false
+  },
+  {
+    "id": 35,
+    "title": "Using Closures",
+    "description": "Learn how to create and use closures.",
+    "narrative": "Ryle learns to create closures that capture their environment and use them in various situations.",
+    "initialCode": "fn main() {\n    let x = 5;\n    let add_x = |y| y + x;\n    println!(\"{}\", add_x(2)); // This will print 7\n}",
+    "expectedOutput": "7",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define a closure using the `||` syntax.",
+      "Use closures to capture variables from their environment."
+    ],
+    "explanations": {
+      "let add_x = |y| y + x;": "Defines a closure that captures `x` from the environment and adds it to `y`.",
+      "add_x(2)": "Calls the closure with the argument `2`."
+    }
+  },
+  {
+    "id": 36,
+    "title": "Exercise 1: Create a Closure",
+    "description": "Create a closure that multiplies a captured variable by an argument.",
+    "initialCode": "fn main() {\n    let x = 3;\n    let multiply_x = |y| y * x;\n    println!(\"{}\", multiply_x(4)); // This should print 12\n}",
+    "expectedOutput": "12",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define a closure using the `||` syntax.",
+      "Capture the variable `x` and multiply it by the argument."
+    ],
+    "feedback": {
+      "success": "Great! You've successfully created a closure that captures a variable and multiplies it.",
+      "failure": "Ensure you've defined the closure correctly and captured the variable `x`."
+    }
+  },
+  {
+    "id": 37,
+    "title": "Introduction to Iterators",
+    "description": "Learn about iterators and how they can simplify looping.",
+    "narrative": "Ryle learns about iterators, which provide a powerful way to traverse and manipulate collections.",
+    "initialCode": "fn main() {\n    let vec = vec![1, 2, 3];\n    for val in vec.iter() {\n        println!(\"{}\", val);\n    }\n}",
+    "expectedOutput": "1\n2\n3",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `.iter()` to create an iterator for a collection.",
+      "Use a `for` loop to traverse the iterator."
+    ],
+    "explanations": {
+      "vec.iter()": "Creates an iterator for the vector `vec`.",
+      "for val in vec.iter()": "Iterates over each value in the vector."
+    }
+  },
+  {
+    "id": 38,
+    "title": "Exercise 2: Sum of Iterators",
+    "description": "Use an iterator to find the sum of elements in a collection.",
+    "initialCode": "fn main() {\n    let vec = vec![1, 2, 3, 4, 5];\n    let sum: i32 = vec.iter().sum();\n    println!(\"The sum is: {}\", sum); // This should print 15\n}",
+    "expectedOutput": "The sum is: 15",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `.iter()` to create an iterator for the collection.",
+      "Use `.sum()` to calculate the sum of the elements."
+    ],
+    "feedback": {
+      "success": "Excellent! You've successfully used an iterator to find the sum of elements.",
+      "failure": "Ensure you've used the `.iter()` and `.sum()` methods correctly."
+    }
+  },
+  {
+    "id": 39,
+    "title": "Advanced Iterators",
+    "description": "Learn about advanced iterator methods like `map` and `filter`.",
+    "narrative": "Ryle delves deeper into the power of iterators, learning advanced methods like `map` and `filter` to manipulate collections.",
+    "initialCode": "fn main() {\n    let vec = vec![1, 2, 3, 4, 5];\n    let doubled: Vec<i32> = vec.iter().map(|x| x * 2).collect();\n    println!(\"{:?}\", doubled); // This should print [2, 4, 6, 8, 10]\n}",
+    "expectedOutput": "[2, 4, 6, 8, 10]",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `.map()` to apply a function to each element in the iterator.",
+      "Use `.collect()` to gather the results into a collection."
+    ],
+    "explanations": {
+      "vec.iter().map(|x| x * 2)": "Applies the closure to double each element in the vector.",
+      ".collect()": "Gathers the results into a new collection."
+    }
+  },
+  {
+    "id": 40,
+    "title": "Exercise 3: Filter and Collect",
+    "description": "Use an iterator to filter out even numbers and collect the results.",
+    "initialCode": "fn main() {\n    let vec = vec![1, 2, 3, 4, 5];\n    let even: Vec<i32> = vec.iter().filter(|&&x| x % 2 == 0).collect();\n    println!(\"{:?}\", even); // This should print [2, 4]\n}",
+    "expectedOutput": "[2, 4]",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `.filter()` to apply a condition to each element in the iterator.",
+      "Use `.collect()` to gather the filtered results into a collection."
+    ],
+    "feedback": {
+      "success": "Great job! You've successfully used an iterator to filter and collect elements.",
+      "failure": "Ensure you've used the `.filter()` and `.collect()` methods correctly."
+    }
+  },
+  {
+    "id": 41,
+    "title": "Combining Closures and Iterators",
+    "description": "Learn to combine closures and iterators for powerful data manipulation.",
+    "narrative": "Ryle masters the art of combining closures and iterators to perform complex data manipulations efficiently.",
+    "initialCode": "fn main() {\n    let vec = vec![1, 2, 3, 4, 5];\n    let result: Vec<i32> = vec.iter().map(|x| x * 2).filter(|x| x % 3 == 0).collect();\n    println!(\"{:?}\", result); // This should print [6, 12]\n}",
+    "expectedOutput": "[6, 12]",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `.map()` to apply a closure to each element.",
+      "Use `.filter()` to apply a condition to the mapped elements.",
+      "Use `.collect()` to gather the results into a collection."
+    ],
+    "explanations": {
+      "vec.iter().map(|x| x * 2).filter(|x| x % 3 == 0)": "Applies the closure to double each element and then filters for elements divisible by 3.",
+      ".collect()": "Gathers the results into a new collection."
+    }
+  },
+  {
+    "id": 42,
+    "title": "Exercise 4: Advanced Combination",
+    "description": "Create a combination of closures and iterators to process data.",
+    "initialCode": "fn main() {\n    let vec = vec![1, 2, 3, 4, 5];\n    let result: Vec<i32> = vec.iter().map(|x| x + 1).filter(|x| x % 2 == 0).collect();\n    println!(\"{:?}\", result); // This should print [2, 4, 6]\n}",
+    "expectedOutput": "[2, 4, 6]",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `.map()` to apply a closure to each element.",
+      "Use `.filter()` to apply a condition to the mapped elements.",
+      "Use `.collect()` to gather the results into a collection."
+    ],
+    "feedback": {
+      "success": "Fantastic! You've mastered combining closures and iterators for advanced data manipulation.",
+      "failure": "Ensure you've used the `.map()`, `.filter()`, and `.collect()` methods correctly."
+    }
+  },
+  {
+    "id": 43,
+    "title": "Introduction to Traits",
+    "description": "Ryle arrives at the Grand Library and learns about traits.",
+    "narrative": "In the Grand Library of Rustonia, Ryle discovers the concept of traits, which define shared behavior for different types.",
+    "isCompleted": false,
+    "requiresCode": false
+  },
+  {
+    "id": 44,
+    "title": "Defining and Implementing Traits",
+    "description": "Learn how to define and implement traits.",
+    "narrative": "Ryle learns to define traits and implement them for different types.",
+    "initialCode": "trait Describable {\n    fn describe(&self) -> String;\n}\n\nstruct Creature {\n    name: String,\n    level: u32,\n}\n\nimpl Describable for Creature {\n    fn describe(&self) -> String {\n        format!(\"{} is at level {}\", self.name, self.level)\n    }\n}\n\nfn main() {\n    let creature = Creature {\n        name: String::from(\"Goblin\"),\n        level: 3,\n    };\n    println!(\"{}\", creature.describe());\n}",
+    "expectedOutput": "Goblin is at level 3",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define a trait using the `trait` keyword.",
+      "Implement the trait for a struct using the `impl` keyword."
+    ],
+    "explanations": {
+      "trait Describable": "Defines a trait named `Describable`.",
+      "fn describe(&self) -> String": "Defines a method that must be implemented by any type that implements the `Describable` trait.",
+      "impl Describable for Creature": "Implements the `Describable` trait for the `Creature` struct."
+    }
+  },
+  {
+    "id": 45,
+    "title": "Exercise 1: Implement Another Trait",
+    "description": "Implement the `Describable` trait for another struct.",
+    "initialCode": "trait Describable {\n    fn describe(&self) -> String;\n}\n\nstruct Creature {\n    name: String,\n    level: u32,\n}\n\nimpl Describable for Creature {\n    fn describe(&self) -> String {\n        format!(\"{} is at level {}\", self.name, self.level)\n    }\n}\n\nstruct Weapon {\n    name: String,\n    damage: u32,\n}\n\nfn main() {\n    let weapon = Weapon {\n        name: String::from(\"Sword\"),\n        damage: 50,\n    };\n    // Implement the Describable trait for Weapon and print the description\n    println!(\"{}\", weapon.describe());\n}",
+    "expectedOutput": "Sword deals 50 damage",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Implement the `Describable` trait for the `Weapon` struct.",
+      "Define the `describe` method to return a description of the weapon."
+    ],
+    "feedback": {
+      "success": "Great! You've successfully implemented the `Describable` trait for another struct.",
+      "failure": "Ensure you've implemented the `Describable` trait correctly for the `Weapon` struct."
+    }
+  },
+  {
+    "id": 46,
+    "title": "Introduction to Generics",
+    "description": "Learn how to use generics to write flexible and reusable code.",
+    "narrative": "Ryle discovers the power of generics, allowing him to write flexible and reusable code.",
+    "initialCode": "struct Point<T> {\n    x: T,\n    y: T,\n}\n\nfn main() {\n    let int_point = Point { x: 5, y: 10 };\n    let float_point = Point { x: 1.0, y: 4.0 };\n    println!(\"int_point: ({} {})\", int_point.x, int_point.y);\n    println!(\"float_point: ({} {})\", float_point.x, float_point.y);\n}",
+    "expectedOutput": "int_point: (5 10)\nfloat_point: (1 4)",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define a struct with a generic type parameter `T`.",
+      "Create instances of the struct with different types."
+    ],
+    "explanations": {
+      "struct Point<T>": "Defines a struct named `Point` with a generic type parameter `T`.",
+      "Point { x: 5, y: 10 }": "Creates an instance of `Point` with integer values.",
+      "Point { x: 1.0, y: 4.0 }": "Creates an instance of `Point` with floating-point values."
+    }
+  },
+  {
+    "id": 47,
+    "title": "Exercise 2: Create a Generic Function",
+    "description": "Create a generic function that works with different types.",
+    "initialCode": "struct Point<T> {\n    x: T,\n    y: T,\n}\n\nfn main() {\n    let int_point = Point { x: 5, y: 10 };\n    let float_point = Point { x: 1.0, y: 4.0 };\n    println!(\"int_point: ({} {})\", int_point.x, int_point.y);\n    println!(\"float_point: ({} {})\", float_point.x, float_point.y);\n}\n\n// Create a generic function named `display_point` that takes a `Point` and prints its coordinates",
+    "expectedOutput": "Point coordinates: (5, 10)\nPoint coordinates: (1.0, 4.0)",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define a generic function using the `<T>` syntax.",
+      "Use the generic parameter to accept a `Point` of any type."
+    ],
+    "feedback": {
+      "success": "Excellent! You've created a generic function that works with different types.",
+      "failure": "Ensure you've defined the generic function correctly."
+    }
+  },
+  {
+    "id": 48,
+    "title": "Introduction to Trait Bounds",
+    "description": "Learn how to use trait bounds to constrain generic types.",
+    "narrative": "Ryle learns about trait bounds, which allow him to constrain generic types to those that implement specific traits.",
+    "initialCode": "use std::fmt::Display;\n\nstruct Point<T> {\n    x: T,\n    y: T,\n}\n\nfn display_point<T: Display>(point: &Point<T>) {\n    println!(\"Point coordinates: ({}, {})\", point.x, point.y);\n}\n\nfn main() {\n    let int_point = Point { x: 5, y: 10 };\n    let float_point = Point { x: 1.0, y: 4.0 };\n    display_point(&int_point);\n    display_point(&float_point);\n}",
+    "expectedOutput": "Point coordinates: (5, 10)\nPoint coordinates: (1.0, 4.0)",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `T: Display` to constrain the generic type `T` to those that implement the `Display` trait.",
+      "Call the generic function with instances of `Point`."
+    ],
+    "explanations": {
+      "T: Display": "Constrains the generic type `T` to those that implement the `Display` trait.",
+      "display_point(&int_point)": "Calls the `display_point` function with an integer `Point`.",
+      "display_point(&float_point)": "Calls the `display_point` function with a floating-point `Point`."
+    }
+  },
+  {
+    "id": 49,
+    "title": "Exercise 3: Add Trait Bounds",
+    "description": "Add trait bounds to a generic function to constrain its types.",
+    "initialCode": "use std::fmt::Display;\n\nstruct Point<T> {\n    x: T,\n    y: T,\n}\n\nfn main() {\n    let int_point = Point { x: 5, y: 10 };\n    let float_point = Point { x: 1.0, y: 4.0 };\n    // Add trait bounds to the `display_point` function and call it with `int_point` and `float_point`\n}",
+    "expectedOutput": "Point coordinates: (5, 10)\nPoint coordinates: (1.0, 4.0)",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Add `T: Display` to the generic function to constrain the type `T`.",
+      "Call the function with instances of `Point`."
+    ],
+    "feedback": {
+      "success": "Great job! You've successfully added trait bounds to a generic function.",
+      "failure": "Ensure you've added the trait bounds correctly and called the function with instances of `Point`."
+    }
+  },
+  {
+    "id": 50,
+    "title": "Introduction to Error Handling",
+    "description": "Ryle reaches the Safety Sanctuary and learns the importance of error handling.",
+    "narrative": "In the Safety Sanctuary, Ryle discovers the importance of handling errors gracefully to ensure his spells (programs) do not fail unexpectedly.",
+    "isCompleted": false,
+    "requiresCode": false
+  },
+  {
+    "id": 51,
+    "title": "Using the `Result` Type",
+    "description": "Learn how to use the `Result` type for error handling.",
+    "narrative": "Ryle learns to use the `Result` type to handle operations that can succeed or fail.",
+    "initialCode": "fn main() {\n    let result: Result<i32, String> = divide(10, 2);\n    match result {\n        Ok(value) => println!(\"Result: {}\", value),\n        Err(error) => println!(\"Error: {}\", error),\n    }\n}\n\nfn divide(a: i32, b: i32) -> Result<i32, String> {\n    if b == 0 {\n        Err(String::from(\"Cannot divide by zero\"))\n    } else {\n        Ok(a / b)\n    }\n}",
+    "expectedOutput": "Result: 5",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `Result` type to represent operations that can fail.",
+      "Use `Ok` for successful results and `Err` for errors."
+    ],
+    "explanations": {
+      "Result<i32, String>": "Defines a `Result` type that can hold either a successful `i32` value or a `String` error.",
+      "Ok(a / b)": "Returns the successful result.",
+      "Err(String::from(\"Cannot divide by zero\"))": "Returns an error if the divisor is zero."
+    }
+  },
+  {
+    "id": 52,
+    "title": "Exercise 1: Handling Division Errors",
+    "description": "Modify the code to handle division by zero errors.",
+    "initialCode": "fn main() {\n    let result: Result<i32, String> = divide(10, 0);\n    match result {\n        Ok(value) => println!(\"Result: {}\", value),\n        Err(error) => println!(\"Error: {}\", error),\n    }\n}\n\nfn divide(a: i32, b: i32) -> Result<i32, String> {\n    if b == 0 {\n        Err(String::from(\"Cannot divide by zero\"))\n    } else {\n        Ok(a / b)\n    }\n}",
+    "expectedOutput": "Error: Cannot divide by zero",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `Result` type to handle division errors.",
+      "Return `Err` if the divisor is zero."
+    ],
+    "feedback": {
+      "success": "Great! You've successfully handled division by zero errors.",
+      "failure": "Ensure you've returned `Err` for division by zero cases."
+    }
+  },
+  {
+    "id": 53,
+    "title": "Using the `Option` Type",
+    "description": "Learn how to use the `Option` type for optional values.",
+    "narrative": "Ryle discovers the `Option` type, which allows him to handle cases where a value might be absent.",
+    "initialCode": "fn main() {\n    let name = Some(String::from(\"Ryle\"));\n    match name {\n        Some(value) => println!(\"Name: {}\", value),\n        None => println!(\"No name provided\"),\n    }\n}",
+    "expectedOutput": "Name: Ryle",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `Option` type to represent optional values.",
+      "Use `Some` for present values and `None` for absent values."
+    ],
+    "explanations": {
+      "Option<String>": "Defines an `Option` type that can hold either a `String` value or no value.",
+      "Some(String::from(\"Ryle\"))": "Represents a present value.",
+      "None": "Represents an absent value."
+    }
+  },
+  {
+    "id": 54,
+    "title": "Exercise 2: Handle Optional Values",
+    "description": "Modify the code to handle cases where the name might be absent.",
+    "initialCode": "fn main() {\n    let name: Option<String> = None;\n    match name {\n        Some(value) => println!(\"Name: {}\", value),\n        None => println!(\"No name provided\"),\n    }\n}",
+    "expectedOutput": "No name provided",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `Option` type to handle cases where a value might be absent.",
+      "Return `None` if no value is provided."
+    ],
+    "feedback": {
+      "success": "Excellent! You've handled cases where the name might be absent.",
+      "failure": "Ensure you've returned `None` for absent values."
+    }
+  },
+  {
+    "id": 55,
+    "title": "Using `unwrap` and `expect`",
+    "description": "Learn how to use `unwrap` and `expect` to handle `Result` and `Option` types.",
+    "narrative": "Ryle learns to use `unwrap` and `expect` for quick handling of `Result` and `Option` types, while being mindful of their risks.",
+    "initialCode": "fn main() {\n    let result: Result<i32, String> = divide(10, 2);\n    println!(\"Result: {}\", result.unwrap());\n    let name = Some(String::from(\"Ryle\"));\n    println!(\"Name: {}\", name.expect(\"No name provided\"));\n}\n\nfn divide(a: i32, b: i32) -> Result<i32, String> {\n    if b == 0 {\n        Err(String::from(\"Cannot divide by zero\"))\n    } else {\n        Ok(a / b)\n    }\n}",
+    "expectedOutput": "Result: 5\nName: Ryle",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `unwrap` to quickly extract the value from a `Result` or `Option`.",
+      "Use `expect` to extract the value with a custom error message."
+    ],
+    "explanations": {
+      "result.unwrap()": "Extracts the value from `Result`, panicking if it is `Err`.",
+      "name.expect(\"No name provided\")": "Extracts the value from `Option`, panicking with a custom message if it is `None`."
+    }
+  },
+  {
+    "id": 56,
+    "title": "Exercise 3: Using `unwrap` and `expect`",
+    "description": "Modify the code to use `unwrap` and `expect` for error handling.",
+    "initialCode": "fn main() {\n    let result: Result<i32, String> = divide(10, 0);\n    println!(\"Result: {}\", result.expect(\"Division failed\"));\n    let name: Option<String> = None;\n    println!(\"Name: {}\", name.unwrap_or(\"Anonymous\"));\n}\n\nfn divide(a: i32, b: i32) -> Result<i32, String> {\n    if b == 0 {\n        Err(String::from(\"Cannot divide by zero\"))\n    } else {\n        Ok(a / b)\n    }\n}",
+    "expectedOutput": "Error: Division failed",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `expect` to handle `Result` with a custom error message.",
+      "Use `unwrap_or` to provide a default value for `Option`."
+    ],
+    "feedback": {
+      "success": "Great job! You've successfully used `unwrap` and `expect` for error handling.",
+      "failure": "Ensure you've used `expect` and `unwrap_or` correctly."
+    }
+  },
+  {
+    "id": 57,
+    "title": "Handling Panics",
+    "description": "Learn how to handle panics in Rust using the `panic!` macro.",
+    "narrative": "Ryle learns about the `panic!` macro, which allows him to handle unexpected situations that cause his program to terminate.",
+    "initialCode": "fn main() {\n    let result = divide(10, 0);\n    println!(\"Result: {}\", result.unwrap());\n}\n\nfn divide(a: i32, b: i32) -> Result<i32, String> {\n    if b == 0 {\n        panic!(\"Cannot divide by zero\");\n    } else {\n        Ok(a / b)\n    }\n}",
+    "expectedOutput": "thread 'main' panicked at 'Cannot divide by zero', src/main.rs:8:9\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `panic!` macro to handle unexpected situations.",
+      "Ensure that `panic!` is used for unrecoverable errors."
+    ],
+    "explanations": {
+      "panic!(\"Cannot divide by zero\")": "Causes the program to panic with the provided message."
+    }
+  },
+  {
+    "id": 58,
+    "title": "Exercise 4: Using `panic!`",
+    "description": "Modify the code to handle division by zero using the `panic!` macro.",
+    "initialCode": "fn main() {\n    let result = divide(10, 0);\n    println!(\"Result: {}\", result.unwrap());\n}\n\nfn divide(a: i32, b: i32) -> Result<i32, String> {\n    if b == 0 {\n        // Use the `panic!` macro to handle division by zero\n    } else {\n        Ok(a / b)\n    }\n}",
+    "expectedOutput": "thread 'main' panicked at 'Cannot divide by zero', src/main.rs:8:9\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `panic!` macro to handle division by zero.",
+      "Ensure the `panic!` macro is used for unrecoverable errors."
+    ],
+    "feedback": {
+      "success": "Well done! You've successfully used the `panic!` macro to handle division by zero.",
+      "failure": "Ensure you've used the `panic!` macro correctly for unrecoverable errors."
+    }
+  },
+
+  {
+    "id": 59,
+    "title": "Introduction to Collections",
+    "description": "Ryle ventures into the Collection Chronicles and learns about common Rust collections.",
+    "narrative": "Ryle discovers various collections in Rustonia, each designed to store and manipulate groups of data efficiently.",
+    "isCompleted": false,
+    "requiresCode": false
+  },
+  {
+    "id": 60,
+    "title": "Working with Vectors",
+    "description": "Learn how to create and manipulate vectors.",
+    "narrative": "Ryle learns to use vectors to store and manage a dynamic array of elements.",
+    "initialCode": "fn main() {\n    let mut v = Vec::new();\n    v.push(1);\n    v.push(2);\n    v.push(3);\n    println!(\"{:?}\", v);\n}",
+    "expectedOutput": "[1, 2, 3]",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `Vec::new()` to create a new, empty vector.",
+      "Use the `push` method to add elements to the vector."
+    ],
+    "explanations": {
+      "Vec::new()": "Creates a new, empty vector.",
+      "v.push(1)": "Adds the element `1` to the vector."
+    }
+  },
+  {
+    "id": 61,
+    "title": "Exercise 1: Manipulate Vectors",
+    "description": "Add more elements to the vector and print the final state.",
+    "initialCode": "fn main() {\n    let mut v = Vec::new();\n    v.push(1);\n    v.push(2);\n    v.push(3);\n    // Add elements 4 and 5 to the vector and print the final state\n    println!(\"{:?}\", v);\n}",
+    "expectedOutput": "[1, 2, 3, 4, 5]",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `push` method to add more elements to the vector.",
+      "Print the final state of the vector using `println!`."
+    ],
+    "feedback": {
+      "success": "Great! You've successfully added elements to the vector and printed its final state.",
+      "failure": "Ensure you've added the elements correctly and printed the final state of the vector."
+    }
+  },
+  {
+    "id": 62,
+    "title": "Using Hash Maps",
+    "description": "Learn how to create and manipulate hash maps.",
+    "narrative": "Ryle learns to use hash maps to store key-value pairs efficiently.",
+    "initialCode": "use std::collections::HashMap;\n\nfn main() {\n    let mut scores = HashMap::new();\n    scores.insert(String::from(\"Blue\"), 10);\n    scores.insert(String::from(\"Yellow\"), 50);\n    println!(\"{:?}\", scores);\n}",
+    "expectedOutput": "{\"Blue\": 10, \"Yellow\": 50}",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `HashMap::new()` to create a new, empty hash map.",
+      "Use the `insert` method to add key-value pairs to the hash map."
+    ],
+    "explanations": {
+      "HashMap::new()": "Creates a new, empty hash map.",
+      "scores.insert(String::from(\"Blue\"), 10)": "Adds a key-value pair to the hash map."
+    }
+  },
+  {
+    "id": 63,
+    "title": "Exercise 2: Manipulate Hash Maps",
+    "description": "Add more key-value pairs to the hash map and print the final state.",
+    "initialCode": "use std::collections::HashMap;\n\nfn main() {\n    let mut scores = HashMap::new();\n    scores.insert(String::from(\"Blue\"), 10);\n    scores.insert(String::from(\"Yellow\"), 50);\n    // Add key-value pairs for \"Green\" and \"Red\" with scores 30 and 40 respectively, and print the final state\n    println!(\"{:?}\", scores);\n}",
+    "expectedOutput": "{\"Blue\": 10, \"Yellow\": 50, \"Green\": 30, \"Red\": 40}",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `insert` method to add more key-value pairs to the hash map.",
+      "Print the final state of the hash map using `println!`."
+    ],
+    "feedback": {
+      "success": "Excellent! You've successfully added key-value pairs to the hash map and printed its final state.",
+      "failure": "Ensure you've added the key-value pairs correctly and printed the final state of the hash map."
+    }
+  },
+  {
+    "id": 64,
+    "title": "Working with Strings",
+    "description": "Learn how to create and manipulate strings.",
+    "narrative": "Ryle learns to use strings to store and manipulate text data.",
+    "initialCode": "fn main() {\n    let mut s = String::from(\"Hello\");\n    s.push_str(\", world!\");\n    println!(\"{}\", s);\n}",
+    "expectedOutput": "Hello, world!",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `String::from` to create a new string.",
+      "Use the `push_str` method to append a string slice to the string."
+    ],
+    "explanations": {
+      "String::from(\"Hello\")": "Creates a new string with the initial value \"Hello\".",
+      "s.push_str(\", world!\")": "Appends the string slice \", world!\" to the string."
+    }
+  },
+  {
+    "id": 65,
+    "title": "Exercise 3: Manipulate Strings",
+    "description": "Concatenate strings and print the final state.",
+    "initialCode": "fn main() {\n    let mut s1 = String::from(\"Hello\");\n    let s2 = String::from(\", world!\");\n    // Concatenate s1 and s2 and print the final state\n    println!(\"{}\", s1);\n}",
+    "expectedOutput": "Hello, world!",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `+` operator to concatenate `s1` and `s2`.",
+      "Print the final state of the concatenated string using `println!`."
+    ],
+    "feedback": {
+      "success": "Well done! You've successfully concatenated strings and printed the final state.",
+      "failure": "Ensure you've concatenated the strings correctly and printed the final state."
+    }
+  },
+  {
+    "id": 66,
+    "title": "Advanced String Manipulation",
+    "description": "Learn advanced techniques for manipulating strings.",
+    "narrative": "Ryle delves deeper into string manipulation, learning advanced techniques such as replacing and slicing strings.",
+    "initialCode": "fn main() {\n    let s = String::from(\"Hello, world!\");\n    let hello = &s[0..5];\n    let replaced = s.replace(\"world\", \"Rust\");\n    println!(\"{}\", hello); // This should print 'Hello'\n    println!(\"{}\", replaced); // This should print 'Hello, Rust!'\n}",
+    "expectedOutput": "Hello\nHello, Rust!",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use slicing syntax to extract a part of the string.",
+      "Use the `replace` method to replace a substring with another substring."
+    ],
+    "explanations": {
+      "&s[0..5]": "Slices the string to get the first five characters.",
+      "s.replace(\"world\", \"Rust\")": "Replaces the substring \"world\" with \"Rust\"."
+    }
+  },
+  {
+    "id": 67,
+    "title": "Exercise 4: Advanced String Operations",
+    "description": "Perform advanced string operations and print the results.",
+    "initialCode": "fn main() {\n    let s = String::from(\"Learning Rust is fun!\");\n    // Extract the word 'Rust' using slicing\n    // Replace the word 'fun' with 'awesome' and print the results\n    println!(\"{}\", s);\n}",
+    "expectedOutput": "Rust\nLearning Rust is awesome!",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use slicing to extract the word 'Rust' from the string.",
+      "Use the `replace` method to replace 'fun' with 'awesome'."
+    ],
+    "feedback": {
+      "success": "Fantastic! You've performed advanced string operations and printed the results.",
+      "failure": "Ensure you've used slicing and the `replace` method correctly."
+    }
+  },
+  {"id": 68,
+  "title": "Introduction to Concurrency with Channels",
+  "description": "Ryle arrives at the Parallel Plains and learns about channels for concurrency.",
+  "narrative": "In the Parallel Plains, Ryle discovers channels, a powerful tool for concurrent programming in Rust.",
+  "isCompleted": false,
+  "requiresCode": false
+},
+{
+  "id": 69,
+  "title": "Using Channels",
+  "description": "Learn how to create and use channels for communication between threads.",
+  "narrative": "Ryle learns to use channels to send and receive messages between threads.",
+  "initialCode": "use std::sync::mpsc;\nuse std::thread;\n\nfn main() {\n    let (tx, rx) = mpsc::channel();\n    thread::spawn(move || {\n        let val = String::from(\"hi\");\n        tx.send(val).unwrap();\n    });\n\n    let received = rx.recv().unwrap();\n    println!(\"Got: {}\", received);\n}",
+  "expectedOutput": "Got: hi",
+  "isCompleted": false,
+  "requiresCode": true,
+  "hints": [
+    "Use `mpsc::channel()` to create a new channel.",
+    "Use `tx.send()` to send a message through the channel.",
+    "Use `rx.recv()` to receive a message from the channel."
+  ],
+  "explanations": {
+    "mpsc::channel()": "Creates a new channel.",
+    "tx.send(val).unwrap()": "Sends a message through the transmitting end of the channel.",
+    "rx.recv().unwrap()": "Receives a message from the receiving end of the channel."
+  }
+},
+{
+  "id": 70,
+  "title": "Exercise 1: Multiple Messages",
+  "description": "Send multiple messages through the channel and print each received message.",
+  "initialCode": "use std::sync::mpsc;\nuse std::thread;\n\nfn main() {\n    let (tx, rx) = mpsc::channel();\n    thread::spawn(move || {\n        let messages = vec![\"hi\", \"from\", \"the\", \"thread\"];\n        for msg in messages {\n            tx.send(String::from(msg)).unwrap();\n        }\n    });\n\n    for received in rx {\n        println!(\"Got: {}\", received);\n    }\n}",
+  "expectedOutput": "Got: hi\nGot: from\nGot: the\nGot: thread",
+  "isCompleted": false,
+  "requiresCode": true,
+  "hints": [
+    "Use a loop to send multiple messages through the channel.",
+    "Use a loop to receive and print each message from the channel."
+  ],
+  "feedback": {
+    "success": "Great! You've successfully sent and received multiple messages through the channel.",
+    "failure": "Ensure you've used a loop to send and receive multiple messages."
+  }
+},
+{
+  "id": 71,
+  "title": "Introduction to `Mutex`",
+  "description": "Learn how to use `Mutex` to ensure safe access to shared data.",
+  "narrative": "Ryle learns to use `Mutex` to manage access to shared data between threads.",
+  "initialCode": "use std::sync::{Arc, Mutex};\nuse std::thread;\n\nfn main() {\n    let counter = Arc::new(Mutex::new(0));\n    let mut handles = vec![];\n\n    for _ in 0..10 {\n        let counter = Arc::clone(&counter);\n        let handle = thread::spawn(move || {\n            let mut num = counter.lock().unwrap();\n            *num += 1;\n        });\n        handles.push(handle);\n    }\n\n    for handle in handles {\n        handle.join().unwrap();\n    }\n\n    println!(\"Result: {}\", *counter.lock().unwrap());\n}",
+  "expectedOutput": "Result: 10",
+  "isCompleted": false,
+  "requiresCode": true,
+  "hints": [
+    "Use `Arc` to create a reference-counted smart pointer.",
+    "Use `Mutex` to ensure safe access to shared data.",
+    "Use `counter.lock().unwrap()` to acquire the lock before accessing the data."
+  ],
+  "explanations": {
+    "Arc::new(Mutex::new(0))": "Creates a reference-counted smart pointer to a `Mutex` protecting an integer.",
+    "Arc::clone(&counter)": "Clones the `Arc` to create a new reference to the shared data.",
+    "counter.lock().unwrap()": "Locks the `Mutex` to ensure safe access to the shared data."
+  }
+},
+{
+  "id": 72,
+  "title": "Exercise 2: Shared Counter",
+  "description": "Increment a shared counter from multiple threads using `Mutex` and `Arc`.",
+  "initialCode": "use std::sync::{Arc, Mutex};\nuse std::thread;\n\nfn main() {\n    let counter = Arc::new(Mutex::new(0));\n    let mut handles = vec![];\n\n    for _ in 0..10 {\n        let counter = Arc::clone(&counter);\n        let handle = thread::spawn(move || {\n            let mut num = counter.lock().unwrap();\n            *num += 1;\n        });\n        handles.push(handle);\n    }\n\n    for handle in handles {\n        handle.join().unwrap();\n    }\n\n    println!(\"Result: {}\", *counter.lock().unwrap());\n}",
+  "expectedOutput": "Result: 10",
+  "isCompleted": false,
+  "requiresCode": true,
+  "hints": [
+    "Use `Arc` to create a reference-counted smart pointer.",
+    "Use `Mutex` to ensure safe access to shared data.",
+    "Use `counter.lock().unwrap()` to acquire the lock before accessing the data."
+  ],
+  "feedback": {
+    "success": "Excellent! You've successfully incremented a shared counter from multiple threads.",
+    "failure": "Ensure you've used `Arc` and `Mutex` correctly to manage shared data."
+  }
+},
+{
+  "id": 73,
+  "title": "Combining Channels and `Mutex`",
+  "description": "Learn how to combine channels and `Mutex` for complex concurrency.",
+  "narrative": "Ryle masters the art of combining channels and `Mutex` to handle complex concurrency scenarios.",
+  "initialCode": "use std::sync::{mpsc, Arc, Mutex};\nuse std::thread;\n\nfn main() {\n    let counter = Arc::new(Mutex::new(0));\n    let (tx, rx) = mpsc::channel();\n    let mut handles = vec![];\n\n    for _ in 0..10 {\n        let counter = Arc::clone(&counter);\n        let tx = tx.clone();\n        let handle = thread::spawn(move || {\n            let mut num = counter.lock().unwrap();\n            *num += 1;\n            tx.send(*num).unwrap();\n        });\n        handles.push(handle);\n    }\n\n    for handle in handles {\n        handle.join().unwrap();\n    }\n\n    for received in rx {\n        println!(\"Received: {}\", received);\n    }\n\n    println!(\"Final Result: {}\", *counter.lock().unwrap());\n}",
+  "expectedOutput": "Received: 1\nReceived: 2\n...\nReceived: 10\nFinal Result: 10",
+  "isCompleted": false,
+  "requiresCode": true,
+  "hints": [
+    "Use `Arc` to create a reference-counted smart pointer.",
+    "Use `Mutex` to ensure safe access to shared data.",
+    "Use `mpsc::channel()` to create a new channel for communication."
+  ],
+  "explanations": {
+    "Arc::new(Mutex::new(0))": "Creates a reference-counted smart pointer to a `Mutex` protecting an integer.",
+    "Arc::clone(&counter)": "Clones the `Arc` to create a new reference to the shared data.",
+    "counter.lock().unwrap()": "Locks the `Mutex` to ensure safe access to the shared data.",
+    "tx.send(*num).unwrap()": "Sends the value through the transmitting end of the channel."
+  }
+},
+{
+  "id": 74,
+  "title": "Exercise 3: Complex Concurrency",
+  "description": "Combine channels and `Mutex` to handle a complex concurrency scenario.",
+  "initialCode": "use std::sync::{mpsc, Arc, Mutex};\nuse std::thread;\n\nfn main() {\n    let counter = Arc::new(Mutex::new(0));\n    let (tx, rx) = mpsc::channel();\n    let mut handles = vec![];\n\n    for _ in 0..10 {\n        let counter = Arc::clone(&counter);\n        let tx = tx.clone();\n        let handle = thread::spawn(move || {\n            let mut num = counter.lock().unwrap();\n            *num += 1;\n            tx.send(*num).unwrap();\n        });\n        handles.push(handle);\n    }\n\n    for handle in handles {\n        handle.join().unwrap();\n    }\n\n    for received in rx {\n        println!(\"Received: {}\", received);\n    }\n\n    println!(\"Final Result: {}\", *counter.lock().unwrap());\n}",
+  "expectedOutput": "Received: 1\nReceived: 2\n...\nReceived: 10\nFinal Result: 10",
+  "isCompleted": false,
+  "requiresCode": true,
+  "hints": [
+    "Use `Arc` to create a reference-counted smart pointer.",
+    "Use `Mutex` to ensure safe access to shared data.",
+    "Use `mpsc::channel()` to create a new channel for communication."
+  ],
+  "feedback": {
+    "success": "Fantastic! You've successfully combined channels and `Mutex` for complex concurrency.",
+    "failure": "Ensure you've used `Arc`, `Mutex`, and channels correctly to manage shared data and communication."
+  }
+},
+{
+    "id": 75,
+    "title": "Introduction to Unsafe Rust",
+    "description": "Ryle enters the Unsafe Realm and learns about Unsafe Rust.",
+    "narrative": "In the Unsafe Realm, Ryle discovers the powerful yet risky features of Unsafe Rust, which allow him to perform operations that are not checked by the compiler's safety guarantees.",
+    "isCompleted": false,
+    "requiresCode": false
+  },
+  {
+    "id": 76,
+    "title": "Using Unsafe Rust",
+    "description": "Learn how to use the `unsafe` keyword to perform unsafe operations.",
+    "narrative": "Ryle learns to use the `unsafe` keyword to perform operations that the Rust compiler cannot guarantee to be safe.",
+    "initialCode": "fn main() {\n    let mut num = 5;\n    let r1 = &num as *const i32;\n    let r2 = &mut num as *mut i32;\n\n    unsafe {\n        println!(\"r1 is: {}\", *r1);\n        println!(\"r2 is: {}\", *r2);\n    }\n}",
+    "expectedOutput": "r1 is: 5\nr2 is: 5",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `as` keyword to cast references to raw pointers.",
+      "Use the `unsafe` block to dereference raw pointers."
+    ],
+    "explanations": {
+      "let r1 = &num as *const i32": "Casts an immutable reference to a raw pointer.",
+      "let r2 = &mut num as *mut i32": "Casts a mutable reference to a raw pointer.",
+      "unsafe { ... }": "Executes code that involves unsafe operations."
+    }
+  },
+  {
+    "id": 77,
+    "title": "Exercise 1: Raw Pointers",
+    "description": "Create and dereference raw pointers using the `unsafe` keyword.",
+    "initialCode": "fn main() {\n    let num = 10;\n    let r = &num as *const i32;\n\n    unsafe {\n        // Dereference the raw pointer and print the value\n    }\n}",
+    "expectedOutput": "10",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `as` keyword to cast a reference to a raw pointer.",
+      "Use the `unsafe` block to dereference the raw pointer."
+    ],
+    "feedback": {
+      "success": "Great! You've successfully created and dereferenced a raw pointer using the `unsafe` keyword.",
+      "failure": "Ensure you've cast the reference to a raw pointer and dereferenced it correctly within the `unsafe` block."
+    }
+  },
+  {
+    "id": 78,
+    "title": "Calling Unsafe Functions",
+    "description": "Learn how to call unsafe functions.",
+    "narrative": "Ryle learns to call functions that involve unsafe operations using the `unsafe` keyword.",
+    "initialCode": "unsafe fn dangerous() {\n    println!(\"This is unsafe!\");\n}\n\nfn main() {\n    unsafe {\n        dangerous();\n    }\n}",
+    "expectedOutput": "This is unsafe!",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define an unsafe function using the `unsafe` keyword.",
+      "Call the unsafe function within an `unsafe` block."
+    ],
+    "explanations": {
+      "unsafe fn dangerous()": "Defines an unsafe function.",
+      "unsafe { dangerous() }": "Calls the unsafe function within an `unsafe` block."
+    }
+  },
+  {
+    "id": 79,
+    "title": "Exercise 2: Unsafe Functions",
+    "description": "Define and call an unsafe function that performs an unsafe operation.",
+    "initialCode": "unsafe fn dangerous_add(a: *const i32, b: *const i32) -> i32 {\n    *a + *b\n}\n\nfn main() {\n    let a = 5;\n    let b = 10;\n    let result;\n    unsafe {\n        result = dangerous_add(&a, &b);\n    }\n    println!(\"Result: {}\", result);\n}",
+    "expectedOutput": "Result: 15",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define an unsafe function using the `unsafe` keyword.",
+      "Use raw pointers as parameters and perform an unsafe operation inside the function.",
+      "Call the unsafe function within an `unsafe` block."
+    ],
+    "feedback": {
+      "success": "Excellent! You've successfully defined and called an unsafe function that performs an unsafe operation.",
+      "failure": "Ensure you've defined the unsafe function correctly and called it within an `unsafe` block."
+    }
+  },
+  {
+    "id": 80,
+    "title": "Foreign Function Interface (FFI)",
+    "description": "Learn how to use Rust's FFI to call functions from other languages.",
+    "narrative": "Ryle learns to use Rust's Foreign Function Interface (FFI) to call functions from other languages, such as C.",
+    "initialCode": "extern \"C\" {\n    fn abs(input: i32) -> i32;\n}\n\nfn main() {\n    unsafe {\n        println!(\"Abs of -3: {}\", abs(-3));\n    }\n}",
+    "expectedOutput": "Abs of -3: 3",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `extern` keyword to declare an external function.",
+      "Use the `unsafe` block to call the external function."
+    ],
+    "explanations": {
+      "extern \"C\" { fn abs(input: i32) -> i32; }": "Declares an external function named `abs` with C linkage.",
+      "unsafe { abs(-3) }": "Calls the external function within an `unsafe` block."
+    }
+  },
+  {
+    "id": 81,
+    "title": "Exercise 3: Calling C Functions",
+    "description": "Declare and call a C function using Rust's FFI.",
+    "initialCode": "extern \"C\" {\n    fn pow(base: f64, exp: f64) -> f64;\n}\n\nfn main() {\n    let result;\n    unsafe {\n        // Call the `pow` function with base 2.0 and exp 3.0 and assign the result\n    }\n    println!(\"2.0 to the power of 3.0 is: {}\", result);\n}",
+    "expectedOutput": "2.0 to the power of 3.0 is: 8.0",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `extern` keyword to declare an external function.",
+      "Use the `unsafe` block to call the external function."
+    ],
+    "feedback": {
+      "success": "Fantastic! You've successfully declared and called a C function using Rust's FFI.",
+      "failure": "Ensure you've declared the external function correctly and called it within an `unsafe` block."
+    }
+  },
+  {
+    "id": 82,
+    "title": "Introduction to Macros",
+    "description": "Ryle arrives at the Macro Mountains and learns about macros in Rust.",
+    "narrative": "In the towering Macro Mountains, Ryle discovers the powerful world of macros, which allow him to write code that writes other code.",
+    "isCompleted": false,
+    "requiresCode": false
+  },
+  {
+    "id": 83,
+    "title": "Using Declarative Macros",
+    "description": "Learn how to create and use declarative macros with `macro_rules!`.",
+    "narrative": "Ryle learns to use declarative macros to create flexible and reusable code patterns.",
+    "initialCode": "macro_rules! say_hello {\n    () => {\n        println!(\"Hello, world!\");\n    };\n}\n\nfn main() {\n    say_hello!();\n}",
+    "expectedOutput": "Hello, world!",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `macro_rules!` to define a declarative macro.",
+      "Use `say_hello!()` to invoke the macro."
+    ],
+    "explanations": {
+      "macro_rules! say_hello": "Defines a declarative macro named `say_hello`.",
+      "println!(\"Hello, world!\");": "The body of the macro, which prints a message to the console.",
+      "say_hello!()": "Invokes the `say_hello` macro."
+    }
+  },
+  {
+    "id": 84,
+    "title": "Exercise 1: Create a Declarative Macro",
+    "description": "Create a declarative macro that prints a custom message.",
+    "initialCode": "macro_rules! print_message {\n    // Define the macro to accept a single argument\n}\n\nfn main() {\n    print_message!(\"Rust macros are powerful!\");\n}",
+    "expectedOutput": "Rust macros are powerful!",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `macro_rules!` to define the macro.",
+      "Define the macro to accept a single argument and print it using `println!`."
+    ],
+    "feedback": {
+      "success": "Great! You've successfully created a declarative macro that prints a custom message.",
+      "failure": "Ensure you've defined the macro correctly and used `println!` to print the message."
+    }
+  },
+  {
+    "id": 85,
+    "title": "Advanced Declarative Macros",
+    "description": "Learn how to create more advanced declarative macros.",
+    "narrative": "Ryle delves deeper into declarative macros, learning to create more advanced patterns with multiple rules and arguments.",
+    "initialCode": "macro_rules! calculate {\n    (add, $a:expr, $b:expr) => {\n        println!(\"{} + {} = {}\", $a, $b, $a + $b);\n    };\n    (subtract, $a:expr, $b:expr) => {\n        println!(\"{} - {} = {}\", $a, $b, $a - $b);\n    };\n}\n\nfn main() {\n    calculate!(add, 5, 3);\n    calculate!(subtract, 7, 2);\n}",
+    "expectedOutput": "5 + 3 = 8\n7 - 2 = 5",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define multiple rules within the macro using different patterns.",
+      "Use `$a:expr` and `$b:expr` to capture expressions as arguments."
+    ],
+    "explanations": {
+      "(add, $a:expr, $b:expr)": "Defines a rule that matches the `add` pattern with two expressions.",
+      "println!(\"{} + {} = {}\", $a, $b, $a + $b);": "Prints the sum of the two expressions.",
+      "(subtract, $a:expr, $b:expr)": "Defines a rule that matches the `subtract` pattern with two expressions.",
+      "println!(\"{} - {} = {}\", $a, $b, $a - $b);": "Prints the difference of the two expressions."
+    }
+  },
+  {
+    "id": 86,
+    "title": "Exercise 2: Advanced Declarative Macro",
+    "description": "Create an advanced declarative macro with multiple rules.",
+    "initialCode": "macro_rules! perform_operation {\n    // Define rules for `multiply` and `divide` operations\n}\n\nfn main() {\n    perform_operation!(multiply, 4, 2);\n    perform_operation!(divide, 8, 2);\n}",
+    "expectedOutput": "4 * 2 = 8\n8 / 2 = 4",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define rules for `multiply` and `divide` patterns.",
+      "Use `$a:expr` and `$b:expr` to capture expressions as arguments."
+    ],
+    "feedback": {
+      "success": "Excellent! You've successfully created an advanced declarative macro with multiple rules.",
+      "failure": "Ensure you've defined the rules correctly and used the captured expressions in the operations."
+    }
+  },
+  {
+    "id": 87,
+    "title": "Introduction to Procedural Macros",
+    "description": "Learn the basics of procedural macros.",
+    "narrative": "Ryle discovers procedural macros, which allow him to generate code from code in a more complex and flexible manner.",
+    "initialCode": "use proc_macro::TokenStream;\n\n#[proc_macro]\npub fn my_macro(input: TokenStream) -> TokenStream {\n    // Process the input TokenStream and generate output TokenStream\n}\n\nfn main() {\n    // Call the procedural macro\n}",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `#[proc_macro]` to define a procedural macro.",
+      "Process the input `TokenStream` and generate an output `TokenStream`."
+    ],
+    "explanations": {
+      "use proc_macro::TokenStream": "Imports the `TokenStream` type from the `proc_macro` crate.",
+      "#[proc_macro]": "Defines a procedural macro.",
+      "pub fn my_macro(input: TokenStream) -> TokenStream": "Defines the procedural macro function."
+    }
+  },
+  {
+    "id": 88,
+    "title": "Exercise 3: Simple Procedural Macro",
+    "description": "Create a simple procedural macro that generates a function.",
+    "initialCode": "use proc_macro::TokenStream;\nuse quote::quote;\nuse syn;\n\n#[proc_macro]\npub fn make_hello_function(input: TokenStream) -> TokenStream {\n    let _input = syn::parse_macro_input!(input as syn::Ident);\n    let gen = quote! {\n        fn hello() {\n            println!(\"Hello, world!\");\n        }\n    };\n    gen.into()\n}\n\nfn main() {\n    make_hello_function!();\n    hello();\n}",
+    "expectedOutput": "Hello, world!",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `quote` crate to generate code.",
+      "Use the `syn` crate to parse the input `TokenStream`.",
+      "Return the generated code as a `TokenStream`."
+    ],
+    "feedback": {
+      "success": "Great! You've successfully created a simple procedural macro that generates a function.",
+      "failure": "Ensure you've used the `quote` and `syn` crates correctly to generate and parse the code."
+    }
+  },
+  {
+    "id": 89,
+    "title": "Advanced Procedural Macros",
+    "description": "Learn to create more advanced procedural macros.",
+    "narrative": "Ryle delves deeper into procedural macros, learning to create more complex code generation patterns.",
+    "initialCode": "use proc_macro::TokenStream;\nuse quote::quote;\nuse syn::{parse_macro_input, DeriveInput};\n\n#[proc_macro_derive(MyTrait)]\npub fn my_trait_derive(input: TokenStream) -> TokenStream {\n    let input = parse_macro_input!(input as DeriveInput);\n    let name = &input.ident;\n    let gen = quote! {\n        impl MyTrait for #name {\n            fn my_function() {\n                println!(\"Hello from {}!\", stringify!(#name));\n            }\n        }\n    };\n    gen.into()\n}\n\nfn main() {\n    // Call the procedural macro derive\n}",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `#[proc_macro_derive]` to define a procedural macro derive.",
+      "Use the `syn` crate to parse the input `TokenStream`.",
+      "Use the `quote` crate to generate the implementation code."
+    ],
+    "explanations": {
+      "use syn::{parse_macro_input, DeriveInput}": "Imports the necessary types from the `syn` crate.",
+      "#[proc_macro_derive(MyTrait)]": "Defines a procedural macro derive for `MyTrait`.",
+      "impl MyTrait for #name": "Generates the implementation of `MyTrait` for the given type."
+    }
+  },
+  {
+    "id": 90,
+    "title": "Exercise 4: Procedural Macro Derive",
+    "description": "Create a procedural macro derive that generates trait implementations.",
+    "initialCode": "use proc_macro::TokenStream;\nuse quote::quote;\nuse syn::{parse_macro_input, DeriveInput};\n\n#[proc_macro_derive(Display)]\npub fn display_derive(input: TokenStream) -> TokenStream {\n    let input = parse_macro_input!(input as DeriveInput);\n    let name = &input.ident;\n    let gen = quote! {\n        impl std::fmt::Display for #name {\n            fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {\n                write!(f, \"{}\", stringify!(#name))\n            }\n        }\n    };\n    gen.into()\n}\n\nfn main() {\n    // Call the procedural macro derive\n}",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `#[proc_macro_derive]` to define a procedural macro derive.",
+      "Use the `syn` crate to parse the input `TokenStream`.",
+      "Use the `quote` crate to generate the implementation code."
+    ],
+    "feedback": {
+      "success": "Fantastic! You've successfully created a procedural macro derive that generates trait implementations.",
+      "failure": "Ensure you've used the `syn` and `quote` crates correctly to parse and generate the code."
+    }
+  },
+
+  {
+    "id": 91,
+    "title": "Introduction to Cargo",
+    "description": "Ryle arrives at the Integration Isles and learns about Cargo, Rust's build system and package manager.",
+    "narrative": "On the Integration Isles, Ryle discovers Cargo, a powerful tool that helps him manage his Rust projects and their dependencies.",
+    "isCompleted": false,
+    "requiresCode": false
+  },
+  {
+    "id": 92,
+    "title": "Creating a New Project",
+    "description": "Learn how to create a new Rust project using Cargo.",
+    "narrative": "Ryle learns to use Cargo to create a new Rust project, setting up the necessary files and directories.",
+    "initialCode": "cargo new hello_world\n",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": false,
+    "hints": [
+      "Use `cargo new <project_name>` to create a new Rust project."
+    ],
+    "explanations": {
+      "cargo new hello_world": "Creates a new Rust project named `hello_world`."
+    }
+  },
+  {
+    "id": 93,
+    "title": "Building and Running a Project",
+    "description": "Learn how to build and run a Rust project using Cargo.",
+    "narrative": "Ryle learns to use Cargo to build and run his Rust projects efficiently.",
+    "initialCode": "cd hello_world\ncargo build\ncargo run\n",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": false,
+    "hints": [
+      "Use `cargo build` to compile the project.",
+      "Use `cargo run` to build and run the project."
+    ],
+    "explanations": {
+      "cargo build": "Compiles the Rust project.",
+      "cargo run": "Builds and runs the Rust project."
+    }
+  },
+  {
+    "id": 94,
+    "title": "Understanding Cargo.toml",
+    "description": "Learn about the `Cargo.toml` file and how it manages project dependencies.",
+    "narrative": "Ryle explores the `Cargo.toml` file, understanding how it manages dependencies and metadata for his Rust project.",
+    "initialCode": "[package]\nname = \"hello_world\"\nversion = \"0.1.0\"\nedition = \"2018\"\n\n[dependencies]\n",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": false,
+    "hints": [
+      "The `[package]` section contains metadata about the project.",
+      "The `[dependencies]` section lists the project's dependencies."
+    ],
+    "explanations": {
+      "[package]": "Contains metadata about the Rust project.",
+      "[dependencies]": "Lists the project's dependencies."
+    }
+  },
+  {
+    "id": 95,
+    "title": "Adding Dependencies",
+    "description": "Learn how to add dependencies to a Rust project using Cargo.",
+    "narrative": "Ryle learns to add dependencies to his Rust project using the `Cargo.toml` file and fetch them with Cargo.",
+    "initialCode": "[dependencies]\nserde = \"1.0\"\n\n# Run `cargo build` to fetch and compile the dependencies",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": false,
+    "hints": [
+      "Add the dependency to the `[dependencies]` section in `Cargo.toml`.",
+      "Run `cargo build` to fetch and compile the dependencies."
+    ],
+    "explanations": {
+      "serde = \"1.0\"": "Adds the `serde` crate as a dependency with version `1.0`."
+    }
+  },
+  {
+    "id": 96,
+    "title": "Creating Modules",
+    "description": "Learn how to create and use modules in Rust.",
+    "narrative": "Ryle discovers how to organize his code using modules, making it easier to manage and maintain.",
+    "initialCode": "mod greetings {\n    pub fn hello() {\n        println!(\"Hello, world!\");\n    }\n}\n\nfn main() {\n    greetings::hello();\n}",
+    "expectedOutput": "Hello, world!",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use the `mod` keyword to define a module.",
+      "Use `pub` to make the module's functions public."
+    ],
+    "explanations": {
+      "mod greetings": "Defines a module named `greetings`.",
+      "pub fn hello()": "Defines a public function named `hello` within the module."
+    }
+  },
+  {
+    "id": 97,
+    "title": "Exercise 1: Creating and Using Modules",
+    "description": "Create a module and use its functions in the main program.",
+    "initialCode": "mod math {\n    pub fn add(a: i32, b: i32) -> i32 {\n        a + b\n    }\n}\n\nfn main() {\n    let result = math::add(2, 3);\n    println!(\"2 + 3 = {}\", result);\n}",
+    "expectedOutput": "2 + 3 = 5",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define a module named `math`.",
+      "Create a public function `add` within the module.",
+      "Use the function in the main program."
+    ],
+    "feedback": {
+      "success": "Great! You've successfully created a module and used its functions in the main program.",
+      "failure": "Ensure you've defined the module and its functions correctly and used them in the main program."
+    }
+  },
+  {
+    "id": 98,
+    "title": "Writing Tests",
+    "description": "Learn how to write and run tests in Rust.",
+    "narrative": "Ryle learns to write tests to ensure his code works correctly and runs them using Cargo.",
+    "initialCode": "#[cfg(test)]\nmod tests {\n    #[test]\n    fn test_add() {\n        assert_eq!(2 + 2, 4);\n    }\n}\n\nfn main() {}\n",
+    "expectedOutput": "running 1 test\ntest tests::test_add ... ok\n\ntest result: ok. 1 passed; 0 failed;",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use `#[cfg(test)]` to create a test module.",
+      "Use `#[test]` to define a test function.",
+      "Use `assert_eq!` to check if the values are equal."
+    ],
+    "explanations": {
+      "#[cfg(test)]": "Creates a test module that is only compiled when running tests.",
+      "#[test]": "Marks the function as a test.",
+      "assert_eq!(2 + 2, 4)": "Asserts that `2 + 2` equals `4`."
+    }
+  },
+  {
+    "id": 99,
+    "title": "Exercise 2: Writing Tests",
+    "description": "Write a test for the `add` function in the `math` module.",
+    "initialCode": "mod math {\n    pub fn add(a: i32, b: i32) -> i32 {\n        a + b\n    }\n}\n\n#[cfg(test)]\nmod tests {\n    use super::math;\n\n    #[test]\n    fn test_add() {\n        assert_eq!(math::add(2, 3), 5);\n    }\n}\n\nfn main() {}\n",
+    "expectedOutput": "running 1 test\ntest tests::test_add ... ok\n\ntest result: ok. 1 passed; 0 failed;",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define a test function within the test module.",
+      "Use `assert_eq!` to check if the `add` function returns the correct result."
+    ],
+    "feedback": {
+      "success": "Excellent! You've successfully written a test for the `add` function in the `math` module.",
+      "failure": "Ensure you've defined the test function correctly and used `assert_eq!` to check the result."
+    }
+  },
+  {
+    "id": 100,
+    "title": "Integration Testing",
+    "description": "Learn how to write integration tests in Rust.",
+    "narrative": "Ryle learns to write integration tests to ensure different parts of his application work together correctly.",
+    "initialCode": "// Create a new file in the `tests` directory: tests/integration_test.rs\n\n// tests/integration_test.rs\nuse hello_world;\n\n#[test]\nfn test_add() {\n    assert_eq!(hello_world::math::add(2, 3), 5);\n}\n",
+    "expectedOutput": "running 1 test\ntest test_add ... ok\n\ntest result: ok. 1 passed; 0 failed;",
+    "isCompleted": false,
+    "requiresCode": false,
+    "hints": [
+      "Create a new file in the `tests` directory for integration tests.",
+      "Write the integration test to check the functionality of the `add` function."
+    ],
+    "explanations": {
+      "use hello_world": "Imports the `hello_world` crate for integration testing.",
+      "#[test]": "Marks the function as a test.",
+      "assert_eq!(hello_world::math::add(2, 3), 5)": "Asserts that `add` returns the correct result."
+    }
+  },
+  {
+    "id": 101,
+    "title": "Exercise 3: Integration Testing",
+    "description": "Write an integration test for the `add` function in the `math` module.",
+    "initialCode": "// Create a new file in the `tests` directory: tests/integration_test.rs\n\n// tests/integration_test.rs\nuse hello_world;\n\n#[test]\nfn test_add() {\n    assert_eq!(hello_world::math::add(2, 3), 5);\n}\n",
+    "expectedOutput": "running 1 test\ntest test_add ... ok\n\ntest result: ok. 1 passed; 0 failed;",
+    "isCompleted": false,
+    "requiresCode": false,
+    "hints": [
+      "Create a new file in the `tests` directory for integration tests.",
+      "Write the integration test to check the functionality of the `add` function."
+    ],
+    "feedback": {
+      "success": "Fantastic! You've successfully written an integration test for the `add` function in the `math` module.",
+      "failure": "Ensure you've created the integration test correctly and used `assert_eq!` to check the result."
+    }
+  },
+  {
+    "id": 102,
+    "title": "Introduction to Performance Optimization",
+    "description": "Ryle reaches the Performance Peaks and learns about optimizing Rust code for better performance.",
+    "narrative": "In the Performance Peaks, Ryle discovers techniques to profile, benchmark, and optimize his Rust code for maximum efficiency.",
+    "isCompleted": false,
+    "requiresCode": false
+  },
+  {
+    "id": 103,
+    "title": "Profiling Rust Code",
+    "description": "Learn how to profile Rust code to identify performance bottlenecks.",
+    "narrative": "Ryle learns to use profiling tools to identify parts of his code that need optimization.",
+    "initialCode": "cargo install cargo-profiler\n\n# To profile a Rust project, use:\ncargo profiler callgrind\n",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": false,
+    "hints": [
+      "Use `cargo install cargo-profiler` to install the profiling tool.",
+      "Use `cargo profiler callgrind` to profile the project."
+    ],
+    "explanations": {
+      "cargo install cargo-profiler": "Installs the `cargo-profiler` tool for profiling Rust code.",
+      "cargo profiler callgrind": "Profiles the Rust project using the Callgrind tool."
+    }
+  },
+  {
+    "id": 104,
+    "title": "Benchmarking Rust Code",
+    "description": "Learn how to benchmark Rust code using the `criterion` crate.",
+    "narrative": "Ryle learns to use the `criterion` crate to benchmark his Rust code and measure its performance accurately.",
+    "initialCode": "[dev-dependencies]\ncriterion = \"0.3\"\n\n# Create a benchmarks directory: benches/benchmark.rs\n\n// benches/benchmark.rs\nuse criterion::{black_box, criterion_group, criterion_main, Criterion};\n\nfn fibonacci(n: u64) -> u64 {\n    match n {\n        0 => 0,\n        1 => 1,\n        _ => fibonacci(n - 1) + fibonacci(n - 2),\n    }\n}\n\nfn criterion_benchmark(c: &mut Criterion) {\n    c.bench_function(\"fibonacci 20\", |b| b.iter(|| fibonacci(black_box(20))));\n}\n\ncriterion_group!(benches, criterion_benchmark);\ncriterion_main!(benches);\n",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": false,
+    "hints": [
+      "Add `criterion` to the `[dev-dependencies]` section in `Cargo.toml`.",
+      "Create a benchmarks directory and add benchmark files.",
+      "Use `criterion_group!` and `criterion_main!` macros to set up benchmarks."
+    ],
+    "explanations": {
+      "criterion = \"0.3\"": "Adds the `criterion` crate as a development dependency for benchmarking.",
+      "criterion_group!(benches, criterion_benchmark)": "Creates a group of benchmarks.",
+      "criterion_main!(benches)": "Sets the main entry point for running benchmarks."
+    }
+  },
+  {
+    "id": 105,
+    "title": "Exercise 1: Benchmarking",
+    "description": "Benchmark a function to measure its performance.",
+    "initialCode": "[dev-dependencies]\ncriterion = \"0.3\"\n\n// Create a benchmarks directory: benches/benchmark.rs\n\n// benches/benchmark.rs\nuse criterion::{black_box, criterion_group, criterion_main, Criterion};\n\nfn square(n: u64) -> u64 {\n    n * n\n}\n\nfn criterion_benchmark(c: &mut Criterion) {\n    c.bench_function(\"square 100\", |b| b.iter(|| square(black_box(100))));\n}\n}\n\ncriterion_group!(benches, criterion_benchmark);\ncriterion_main!(benches);\n",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Define a function to benchmark.",
+      "Set up the `criterion` crate for benchmarking.",
+      "Use `c.bench_function` to measure the function's performance."
+    ],
+    "feedback": {
+      "success": "Great! You've successfully set up a benchmark for the `square` function.",
+      "failure": "Ensure you've defined the function and set up the benchmark correctly using the `criterion` crate."
+    }
+  },
+  {
+    "id": 106,
+    "title": "Optimizing Rust Code",
+    "description": "Learn various techniques to optimize Rust code for better performance.",
+    "narrative": "Ryle discovers various techniques to optimize his Rust code, such as using iterators, avoiding unnecessary allocations, and leveraging Rust's zero-cost abstractions.",
+    "initialCode": "fn main() {\n    let numbers: Vec<u32> = (1..100).collect();\n    let sum: u32 = numbers.iter().sum();\n    println!(\"The sum is: {}\", sum);\n}\n",
+    "expectedOutput": "The sum is: 4950",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use iterators to perform operations on collections efficiently.",
+      "Avoid unnecessary allocations and clones."
+    ],
+    "explanations": {
+      "numbers.iter().sum()": "Uses an iterator to sum the elements of the vector efficiently."
+    }
+  },
+  {
+    "id": 107,
+    "title": "Exercise 2: Optimizing Code",
+    "description": "Optimize a function to improve its performance.",
+    "initialCode": "fn main() {\n    let numbers: Vec<u32> = (1..100).collect();\n    let mut sum = 0;\n    for &num in &numbers {\n        sum += num;\n    }\n    println!(\"The sum is: {}\", sum);\n}\n",
+    "expectedOutput": "The sum is: 4950",
+    "isCompleted": false,
+    "requiresCode": true,
+    "hints": [
+      "Use iterators to perform the summation efficiently.",
+      "Avoid using a `for` loop with manual summation."
+    ],
+    "feedback": {
+      "success": "Excellent! You've successfully optimized the summation function.",
+      "failure": "Ensure you've used iterators to perform the summation efficiently."
+    }
+  },
+  {
+    "id": 108,
+    "title": "Using `cargo-asm` for Optimizations",
+    "description": "Learn how to use `cargo-asm` to view assembly code and optimize Rust code.",
+    "narrative": "Ryle learns to use the `cargo-asm` tool to view the assembly code generated by the Rust compiler, helping him understand and optimize low-level code.",
+    "initialCode": "cargo install cargo-asm\n\n# To view the assembly code for a function:\ncargo asm <module>::<function>\n",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": false,
+    "hints": [
+      "Use `cargo install cargo-asm` to install the tool.",
+      "Use `cargo asm` to view the assembly code for a function."
+    ],
+    "explanations": {
+      "cargo install cargo-asm": "Installs the `cargo-asm` tool for viewing assembly code.",
+      "cargo asm <module>::<function>": "Displays the assembly code for the specified function."
+    }
+  },
+  {
+    "id": 109,
+    "title": "Exercise 3: Using `cargo-asm`",
+    "description": "View the assembly code for a function using `cargo-asm` and identify potential optimizations.",
+    "initialCode": "fn main() {\n    let x = 42;\n    let y = x * 2;\n    println!(\"y: {}\", y);\n}\n\n# Run `cargo asm <module>::<function>` to view the assembly code\n",
+    "expectedOutput": "",
+    "isCompleted": false,
+    "requiresCode": false,
+    "hints": [
+      "Use `cargo asm` to view the assembly code for the `main` function.",
+      "Identify potential optimizations based on the assembly code."
+    ],
+    "feedback": {
+      "success": "Fantastic! You've successfully used `cargo-asm` to view the assembly code and identify potential optimizations.",
+      "failure": "Ensure you've used `cargo-asm` correctly to view the assembly code for the function."
+    }
+},
+    {
+        "id": 110,
+        "title": "Best Practices in Rust",
+        "description": "Ryle arrives at the Concluding Citadel and learns about best practices in Rust programming.",
+        "narrative": "In the Concluding Citadel, Ryle discovers the best practices that make Rust code robust, maintainable, and idiomatic.",
+        "isCompleted": false,
+        "requiresCode": false
+      },
+      {
+        "id": 111,
+        "title": "Writing Idiomatic Rust",
+        "description": "Learn how to write idiomatic Rust code that follows the community's best practices.",
+        "narrative": "Ryle learns to write idiomatic Rust code by following best practices, ensuring his code is clean, efficient, and maintainable.",
+        "initialCode": "fn main() {\n    let mut numbers = vec![1, 2, 3, 4, 5];\n    for number in &mut numbers {\n        *number *= 2;\n    }\n    println!(\"{:?}\", numbers);\n}",
+        "expectedOutput": "[2, 4, 6, 8, 10]",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Use iterators and closures where appropriate.",
+          "Favor `let` bindings for clarity and immutability."
+        ],
+        "explanations": {
+          "for number in &mut numbers": "Iterates over mutable references to the elements in the vector.",
+          "*number *= 2": "Doubles each element in the vector."
+        }
+      },
+      {
+        "id": 112,
+        "title": "Exercise 1: Idiomatic Rust",
+        "description": "Refactor the given code to make it more idiomatic and efficient.",
+        "initialCode": "fn main() {\n    let mut numbers = vec![1, 2, 3, 4, 5];\n    for i in 0..numbers.len() {\n        numbers[i] *= 2;\n    }\n    println!(\"{:?}\", numbers);\n}",
+        "expectedOutput": "[2, 4, 6, 8, 10]",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Use iterators instead of indexing.",
+          "Avoid mutable indexing when possible."
+        ],
+        "feedback": {
+          "success": "Great! You've successfully refactored the code to make it more idiomatic and efficient.",
+          "failure": "Ensure you've used iterators and avoided mutable indexing."
+        }
+      },
+      {
+        "id": 113,
+        "title": "Understanding Ownership and Borrowing",
+        "description": "Revisit ownership and borrowing to ensure a deep understanding of these core Rust concepts.",
+        "narrative": "Ryle revisits ownership and borrowing, reinforcing his understanding of these core concepts that ensure memory safety in Rust.",
+        "initialCode": "fn main() {\n    let s1 = String::from(\"hello\");\n    let s2 = &s1;\n    println!(\"{}\", s2);\n}",
+        "expectedOutput": "hello",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Understand the difference between ownership and borrowing.",
+          "Use references to borrow data without transferring ownership."
+        ],
+        "explanations": {
+          "let s2 = &s1": "Borrows `s1` as an immutable reference.",
+          "println!(\"{}\", s2)": "Prints the borrowed value."
+        }
+      },
+      {
+        "id": 114,
+        "title": "Exercise 2: Ownership and Borrowing",
+        "description": "Refactor the given code to fix ownership and borrowing issues.",
+        "initialCode": "fn main() {\n    let s1 = String::from(\"hello\");\n    let s2 = s1;\n    println!(\"{}\", s1);\n}",
+        "expectedOutput": "error[E0382]: borrow of moved value: `s1`",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Ensure `s1` is not used after it has been moved.",
+          "Use references to borrow data instead of moving it."
+        ],
+        "feedback": {
+          "success": "Excellent! You've successfully refactored the code to fix ownership and borrowing issues.",
+          "failure": "Ensure you've used references to borrow data without transferring ownership."
+        }
+      },
+      {
+        "id": 115,
+        "title": "Using Advanced Features",
+        "description": "Learn to use advanced Rust features like lifetimes, traits, and generics effectively.",
+        "narrative": "Ryle explores advanced Rust features, learning to use lifetimes, traits, and generics to write more powerful and flexible code.",
+        "initialCode": "fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {\n    if x.len() > y.len() {\n        x\n    } else {\n        y\n    }\n}\n\nfn main() {\n    let string1 = String::from(\"long string is long\");\n    let string2 = String::from(\"xyz\");\n    let result = longest(&string1, &string2);\n    println!(\"The longest string is {}\", result);\n}",
+        "expectedOutput": "The longest string is long string is long",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Use lifetimes to specify how long references are valid.",
+          "Use traits and generics to write flexible and reusable code."
+        ],
+        "explanations": {
+          "fn longest<'a>(x: &'a str, y: &'a str) -> &'a str": "Defines a function with lifetime parameters.",
+          "if x.len() > y.len() { x } else { y }": "Returns the longer of the two string slices."
+        }
+      },
+      {
+        "id": 116,
+        "title": "Exercise 3: Using Lifetimes",
+        "description": "Refactor the given code to correctly use lifetimes and fix compilation errors.",
+        "initialCode": "fn main() {\n    let string1 = String::from(\"hello\");\n    let result;\n    {\n        let string2 = String::from(\"world\");\n        result = longest(&string1, &string2);\n    }\n    println!(\"The longest string is {}\", result);\n}\n\nfn longest<'a>(x: &'a str, y: &'a str) -> &'a str {\n    if x.len() > y.len() {\n        x\n    } else {\n        y\n    }\n}",
+        "expectedOutput": "error[E0597]: `string2` does not live long enough",
+        "isCompleted": false,
+        "requiresCode": true,
+        "hints": [
+          "Ensure the lifetimes of references are valid for the duration of their use.",
+          "Use appropriate lifetime annotations to fix the compilation errors."
+        ],
+        "feedback": {
+          "success": "Fantastic! You've successfully refactored the code to correctly use lifetimes and fixed the compilation errors.",
+          "failure": "Ensure the lifetimes of references are valid and use appropriate lifetime annotations."
+        }
+      }
+  
+
+
+    
+  ]
+  
